@@ -3,12 +3,12 @@ project(sourcepp)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
 # Options (General)
 option(SOURCEPP_USE_DMXPP         "Build dmxpp library"                ON)
 option(SOURCEPP_USE_FGDPP         "Build fgdpp library"                ON)
 option(SOURCEPP_USE_STUDIOMODELPP "Build studiomodelpp library"        ON)
 option(SOURCEPP_USE_VMFPP         "Build vmfpp library"                ON)
+option(SOURCEPP_USE_VTFPP         "Build vtfpp library"                ON)
 option(SOURCEPP_BUILD_TESTS       "Build tests for enabled libraries" OFF)
 
 
@@ -27,13 +27,27 @@ list(APPEND ${PROJECT_NAME}_SOURCES
         "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/math/Matrix.h"
         "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/math/Quaternion.h"
         "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/math/Vector.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/math/Floats.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/stb/stb_image.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/compressonator/Compressonator.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/stb/stb_image_resize.h"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/sourcepp/detail/BufferUtils.cpp"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/sourcepp/detail/StringUtils.cpp")
+
 add_library(${PROJECT_NAME} STATIC ${${PROJECT_NAME}_SOURCES})
-target_link_libraries(${PROJECT_NAME} PUBLIC bufferstream)
+target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/sourcepp/compressonator/")
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 
+target_link_libraries(${PROJECT_NAME} PUBLIC bufferstream CMP_Compressonator pthread)
+
+if (UNIX)
+    target_link_directories(${PROJECT_NAME} PUBLIC include/sourcepp/compressonator/lib/x64)
+    target_link_libraries(${PROJECT_NAME} PUBLIC CMP_Compressonator pthread)
+else ()
+    target_link_libraries(${PROJECT_NAME} PUBLIC "Compressonator_MT$<$<CONFIG:Debug>:d>")
+    target_link_directories(${PROJECT_NAME} PUBLIC include/sourcepp/compressonator/lib/)
+endif ()
 # Tests, part 1
 if(SOURCEPP_BUILD_TESTS)
     set(SOURCEPP_TEST_NAME "${PROJECT_NAME}_test")
@@ -106,6 +120,13 @@ if(SOURCEPP_USE_VMFPP)
             "${CMAKE_CURRENT_SOURCE_DIR}/src/vmfpp/vmfpp.cpp")
 endif()
 
+if(SOURCEPP_USE_VTFPP)
+    add_pretty_parser(vtfpp SOURCES
+            "${CMAKE_CURRENT_SOURCE_DIR}/include/vtfpp/vtfpp.h"
+            "${CMAKE_CURRENT_SOURCE_DIR}/include/vtfpp/utils.h"
+            "${CMAKE_CURRENT_SOURCE_DIR}/include/vtfpp/structs/VTF.h"
+    )
+endif()
 
 # Tests, part 2
 if(SOURCEPP_BUILD_TESTS)
