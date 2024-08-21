@@ -1,0 +1,2331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.9.1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="SourcePP" />
+    <!--<meta property="og:image" content="" />-->
+    <meta property="og:description" content="Several modern C++20 libraries for sanely parsing Valve&#39;s formats." />
+    <meta property="og:url" content="https://github.com/craftablescience/sourcepp" />
+    <!-- END opengraph metadata -->
+    <!-- BEGIN twitter metadata -->
+    <!--<meta name="twitter:image:src" content="" />-->
+    <meta name="twitter:title" content="SourcePP" />
+    <meta name="twitter:description" content="Several modern C++20 libraries for sanely parsing Valve&#39;s formats." />
+    <!-- END twitter metadata -->
+    <title>SourcePP: vpkpp::PackFile Class Reference</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="logo.ico"/>
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <!--<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>-->
+    <script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        // DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+    <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="dark-mode">
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/craftablescience/sourcepp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="72" height="72" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">SourcePP
+                    </div>
+                    <div id="projectbrief">Several modern C++20 libraries for sanely parsing Valve&#39;s formats.</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d2/dd2/classvpkpp_1_1PackFile.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../d3/d42/classvpkpp_1_1PackFile-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">vpkpp::PackFile Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for vpkpp::PackFile:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d87/classvpkpp_1_1PackFile__inherit__graph.png" border="0" usemap="#avpkpp_1_1PackFile_inherit__map" alt="Inheritance graph"/></div>
+<map name="avpkpp_1_1PackFile_inherit__map" id="avpkpp_1_1PackFile_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,183,128,209"/>
+<area shape="rect" href="../../d2/d8b/classvpkpp_1_1EXAMPLE.html" title=" " alt="" coords="204,5,335,32"/>
+<area shape="rect" href="../../d6/d2c/classvpkpp_1_1GMA.html" title=" " alt="" coords="219,56,320,83"/>
+<area shape="rect" href="../../d9/daf/classvpkpp_1_1PAK.html" title=" " alt="" coords="222,107,317,133"/>
+<area shape="rect" href="../../d5/db5/classvpkpp_1_1PCK.html" title=" " alt="" coords="221,157,317,184"/>
+<area shape="rect" href="../../de/df6/classvpkpp_1_1PackFileReadOnly.html" title=" " alt="" coords="176,208,363,235"/>
+<area shape="rect" href="../../d5/d8b/classvpkpp_1_1VPK.html" title=" " alt="" coords="221,259,317,285"/>
+<area shape="rect" href="../../d4/ddb/classvpkpp_1_1VPK__VTMB.html" title=" " alt="" coords="199,309,340,336"/>
+<area shape="rect" href="../../da/de7/classvpkpp_1_1ZIP.html" title=" " alt="" coords="224,360,315,387"/>
+<area shape="rect" href="../../d1/d01/classvpkpp_1_1GCF.html" title=" " alt="" coords="411,208,508,235"/>
+<area shape="rect" href="../../da/d42/classvpkpp_1_1FPX.html" title=" " alt="" coords="412,259,507,285"/>
+<area shape="rect" href="../../d2/da8/classvpkpp_1_1BSP.html" title=" " alt="" coords="412,360,507,387"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vpkpp::PackFile:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d2b/classvpkpp_1_1PackFile__coll__graph.png" border="0" usemap="#avpkpp_1_1PackFile_coll__map" alt="Collaboration graph"/></div>
+<map name="avpkpp_1_1PackFile_coll__map" id="avpkpp_1_1PackFile_coll__map">
+<area shape="rect" title=" " alt="" coords="252,213,375,240"/>
+<area shape="rect" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html" title=" " alt="" coords="151,124,324,151"/>
+<area shape="rect" title=" " alt="" coords="5,13,80,39"/>
+<area shape="rect" title=" " alt="" coords="200,13,275,39"/>
+<area shape="rect" title=" " alt="" coords="362,124,449,151"/>
+<area shape="rect" title=" " alt="" coords="351,5,489,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9169f465a648ca355bce9cac1224322b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> = std::function&lt; void(const std::string &amp;path, const <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;entry)&gt;</td></tr>
+<tr class="memdesc:a9169f465a648ca355bce9cac1224322b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts the entry's path and metadata.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">More...</a><br /></td></tr>
+<tr class="separator:a9169f465a648ca355bce9cac1224322b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1302cbbb9ef974236e9e455f74b91e34"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1302cbbb9ef974236e9e455f74b91e34">EntryPredicate</a> = std::function&lt; bool(const std::string &amp;path, const <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;entry)&gt;</td></tr>
+<tr class="memdesc:a1302cbbb9ef974236e9e455f74b91e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts the entry's path and metadata.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1302cbbb9ef974236e9e455f74b91e34">More...</a><br /></td></tr>
+<tr class="separator:a1302cbbb9ef974236e9e455f74b91e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1462ffbd23782248dfa0cf21575e1676"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">EntryTrie</a> = tsl::htrie_map&lt; char, <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &gt;</td></tr>
+<tr class="separator:a1462ffbd23782248dfa0cf21575e1676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:adc77a118c34eab29dd5510d33b69816e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#adc77a118c34eab29dd5510d33b69816e">PackFile</a> (const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;other)=delete</td></tr>
+<tr class="separator:adc77a118c34eab29dd5510d33b69816e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a881c48a518815883527ea3b25a7b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a51a881c48a518815883527ea3b25a7b6">operator=</a> (const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;other)=delete</td></tr>
+<tr class="separator:a51a881c48a518815883527ea3b25a7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7944fb8e4ba984e4a5facee3e2122f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a7944fb8e4ba984e4a5facee3e2122f61">PackFile</a> (<a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&amp;other) noexcept=default</td></tr>
+<tr class="separator:a7944fb8e4ba984e4a5facee3e2122f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb121b59f74e5ae117988d52a435e0b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#abb121b59f74e5ae117988d52a435e0b3">operator=</a> (<a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&amp;other) noexcept=default</td></tr>
+<tr class="separator:abb121b59f74e5ae117988d52a435e0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ca5cc0d75c60dfdbb5ca09f902702a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a21ca5cc0d75c60dfdbb5ca09f902702a">~PackFile</a> ()=default</td></tr>
+<tr class="separator:a21ca5cc0d75c60dfdbb5ca09f902702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b441d33f287e522af51446219111c31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d29/namespacevpkpp.html#aa85a67fde1caa75abb46425eaa54d926">PackFileType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1b441d33f287e522af51446219111c31">getType</a> () const</td></tr>
+<tr class="memdesc:a1b441d33f287e522af51446219111c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file type of the pack file.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1b441d33f287e522af51446219111c31">More...</a><br /></td></tr>
+<tr class="separator:a1b441d33f287e522af51446219111c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5883051c60c72153edbc9d7363f6f36f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a5883051c60c72153edbc9d7363f6f36f">getOptions</a> () const</td></tr>
+<tr class="memdesc:a5883051c60c72153edbc9d7363f6f36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current options of the pack file.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a5883051c60c72153edbc9d7363f6f36f">More...</a><br /></td></tr>
+<tr class="separator:a5883051c60c72153edbc9d7363f6f36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01489dadc91ac52b3c4665b58a40a6ff"><td class="memItemLeft" align="right" valign="top">virtual constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a01489dadc91ac52b3c4665b58a40a6ff">hasEntryChecksums</a> () const</td></tr>
+<tr class="memdesc:a01489dadc91ac52b3c4665b58a40a6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the format has a checksum for each entry.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a01489dadc91ac52b3c4665b58a40a6ff">More...</a><br /></td></tr>
+<tr class="separator:a01489dadc91ac52b3c4665b58a40a6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632694d8d4478215efc581d400ff465b"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a632694d8d4478215efc581d400ff465b">verifyEntryChecksums</a> () const</td></tr>
+<tr class="memdesc:a632694d8d4478215efc581d400ff465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify the checksums of each file, if a file fails the check its path will be added to the vector If there is no checksum ability in the format, it will return an empty vector.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a632694d8d4478215efc581d400ff465b">More...</a><br /></td></tr>
+<tr class="separator:a632694d8d4478215efc581d400ff465b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a34e06dd55959ef95b88d2763cc5d1a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6a34e06dd55959ef95b88d2763cc5d1a">hasPackFileChecksum</a> () const</td></tr>
+<tr class="memdesc:a6a34e06dd55959ef95b88d2763cc5d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the entire file has a checksum.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6a34e06dd55959ef95b88d2763cc5d1a">More...</a><br /></td></tr>
+<tr class="separator:a6a34e06dd55959ef95b88d2763cc5d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46893bdc6813e9d6a1f71ef0a1df4901"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a46893bdc6813e9d6a1f71ef0a1df4901">verifyPackFileChecksum</a> () const</td></tr>
+<tr class="memdesc:a46893bdc6813e9d6a1f71ef0a1df4901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify the checksum of the entire file, returns true on success Will return true if there is no checksum ability in the format.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a46893bdc6813e9d6a1f71ef0a1df4901">More...</a><br /></td></tr>
+<tr class="separator:a46893bdc6813e9d6a1f71ef0a1df4901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25621c2a03fbf947b4a46176dc63eb23"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a25621c2a03fbf947b4a46176dc63eb23">hasPackFileSignature</a> () const</td></tr>
+<tr class="memdesc:a25621c2a03fbf947b4a46176dc63eb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the file is signed.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a25621c2a03fbf947b4a46176dc63eb23">More...</a><br /></td></tr>
+<tr class="separator:a25621c2a03fbf947b4a46176dc63eb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee6075bf81d76bb4c23377c5c33b36e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a4ee6075bf81d76bb4c23377c5c33b36e">verifyPackFileSignature</a> () const</td></tr>
+<tr class="memdesc:a4ee6075bf81d76bb4c23377c5c33b36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify the file signature, returns true on success Will return true if there is no signature ability in the format.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a4ee6075bf81d76bb4c23377c5c33b36e">More...</a><br /></td></tr>
+<tr class="separator:a4ee6075bf81d76bb4c23377c5c33b36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16b67d23c583d1fff3197050c7deda6"><td class="memItemLeft" align="right" valign="top">virtual constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae16b67d23c583d1fff3197050c7deda6">isCaseSensitive</a> () const noexcept</td></tr>
+<tr class="memdesc:ae16b67d23c583d1fff3197050c7deda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the format support case-sensitive file names?  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae16b67d23c583d1fff3197050c7deda6">More...</a><br /></td></tr>
+<tr class="separator:ae16b67d23c583d1fff3197050c7deda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9188af670e9624028d6f61a8347c2161"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9188af670e9624028d6f61a8347c2161">hasEntry</a> (const std::string &amp;path, bool includeUnbaked=true) const</td></tr>
+<tr class="memdesc:a9188af670e9624028d6f61a8347c2161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an entry exists given the file path.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9188af670e9624028d6f61a8347c2161">More...</a><br /></td></tr>
+<tr class="separator:a9188af670e9624028d6f61a8347c2161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463c6aa921a769b79952de90e458190b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a463c6aa921a769b79952de90e458190b">findEntry</a> (const std::string &amp;path_, bool includeUnbaked=true) const</td></tr>
+<tr class="memdesc:a463c6aa921a769b79952de90e458190b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find an entry given the file path.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a463c6aa921a769b79952de90e458190b">More...</a><br /></td></tr>
+<tr class="separator:a463c6aa921a769b79952de90e458190b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490eb871b8b2528efd9dedef6ef22e1c"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; std::vector&lt; std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a490eb871b8b2528efd9dedef6ef22e1c">readEntry</a> (const std::string &amp;path_) const =0</td></tr>
+<tr class="memdesc:a490eb871b8b2528efd9dedef6ef22e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to read the entry's data to a bytebuffer.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a490eb871b8b2528efd9dedef6ef22e1c">More...</a><br /></td></tr>
+<tr class="separator:a490eb871b8b2528efd9dedef6ef22e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9b46edadc22f435879fed64399b671"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1a9b46edadc22f435879fed64399b671">readEntryText</a> (const std::string &amp;path) const</td></tr>
+<tr class="memdesc:a1a9b46edadc22f435879fed64399b671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to read the entry's data to a string.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1a9b46edadc22f435879fed64399b671">More...</a><br /></td></tr>
+<tr class="separator:a1a9b46edadc22f435879fed64399b671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71dd4ec9ff22e4423fa22e1c9349fd94"><td class="memItemLeft" align="right" valign="top">virtual constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a71dd4ec9ff22e4423fa22e1c9349fd94">isReadOnly</a> () const noexcept</td></tr>
+<tr class="separator:a71dd4ec9ff22e4423fa22e1c9349fd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969e4df13d472ef2915ab87cba1f97a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a969e4df13d472ef2915ab87cba1f97a1">addEntry</a> (const std::string &amp;entryPath, const std::string &amp;filepath, <a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a> options_)</td></tr>
+<tr class="memdesc:a969e4df13d472ef2915ab87cba1f97a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new entry from a file path - the first parameter is the path in the <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a>, the second is the path on disk.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a969e4df13d472ef2915ab87cba1f97a1">More...</a><br /></td></tr>
+<tr class="separator:a969e4df13d472ef2915ab87cba1f97a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641bdd900cffda0e116343b7d48b306f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a641bdd900cffda0e116343b7d48b306f">addEntry</a> (const std::string &amp;path, std::vector&lt; std::byte &gt; &amp;&amp;buffer, <a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a> options_)</td></tr>
+<tr class="memdesc:a641bdd900cffda0e116343b7d48b306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new entry from a buffer.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a641bdd900cffda0e116343b7d48b306f">More...</a><br /></td></tr>
+<tr class="separator:a641bdd900cffda0e116343b7d48b306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70e6a0880b1893fc76ba3fc53fa8676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ac70e6a0880b1893fc76ba3fc53fa8676">addEntry</a> (const std::string &amp;path, const std::byte *buffer, uint64_t bufferLen, <a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a> options_)</td></tr>
+<tr class="memdesc:ac70e6a0880b1893fc76ba3fc53fa8676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new entry from a buffer.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#ac70e6a0880b1893fc76ba3fc53fa8676">More...</a><br /></td></tr>
+<tr class="separator:ac70e6a0880b1893fc76ba3fc53fa8676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9209de4b9d185e2a3fba2a727ecae65a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9209de4b9d185e2a3fba2a727ecae65a">renameEntry</a> (const std::string &amp;oldPath_, const std::string &amp;newPath_)</td></tr>
+<tr class="memdesc:a9209de4b9d185e2a3fba2a727ecae65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename an existing entry.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9209de4b9d185e2a3fba2a727ecae65a">More...</a><br /></td></tr>
+<tr class="separator:a9209de4b9d185e2a3fba2a727ecae65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cdbbd142dd32068e21299b5072627d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a38cdbbd142dd32068e21299b5072627d">renameDirectory</a> (const std::string &amp;oldDir_, const std::string &amp;newDir_)</td></tr>
+<tr class="memdesc:a38cdbbd142dd32068e21299b5072627d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename an existing directory.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a38cdbbd142dd32068e21299b5072627d">More...</a><br /></td></tr>
+<tr class="separator:a38cdbbd142dd32068e21299b5072627d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed35a45b68bff1eedcc3a217cf7563b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#aed35a45b68bff1eedcc3a217cf7563b7">removeEntry</a> (const std::string &amp;path_)</td></tr>
+<tr class="memdesc:aed35a45b68bff1eedcc3a217cf7563b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an entry.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#aed35a45b68bff1eedcc3a217cf7563b7">More...</a><br /></td></tr>
+<tr class="separator:aed35a45b68bff1eedcc3a217cf7563b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2baa28d03d0c0892319547b10957d343"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a2baa28d03d0c0892319547b10957d343">removeDirectory</a> (const std::string &amp;dirName_)</td></tr>
+<tr class="memdesc:a2baa28d03d0c0892319547b10957d343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a directory.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a2baa28d03d0c0892319547b10957d343">More...</a><br /></td></tr>
+<tr class="separator:a2baa28d03d0c0892319547b10957d343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1d54eb7cf2d09a7a6bd599277259fc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#abe1d54eb7cf2d09a7a6bd599277259fc">bake</a> (const std::string &amp;outputDir_, const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:abe1d54eb7cf2d09a7a6bd599277259fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">If output folder is unspecified, it will overwrite the original.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#abe1d54eb7cf2d09a7a6bd599277259fc">More...</a><br /></td></tr>
+<tr class="separator:abe1d54eb7cf2d09a7a6bd599277259fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b22edd8215966e194d9875fac0fe923"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a5b22edd8215966e194d9875fac0fe923">extractEntry</a> (const std::string &amp;entryPath, const std::string &amp;filepath) const</td></tr>
+<tr class="memdesc:a5b22edd8215966e194d9875fac0fe923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the given entry to disk at the given file path.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a5b22edd8215966e194d9875fac0fe923">More...</a><br /></td></tr>
+<tr class="separator:a5b22edd8215966e194d9875fac0fe923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb832d80b1822122a2fde5a67ffc847"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a4bb832d80b1822122a2fde5a67ffc847">extractDirectory</a> (const std::string &amp;dir_, const std::string &amp;outputDir) const</td></tr>
+<tr class="memdesc:a4bb832d80b1822122a2fde5a67ffc847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the given directory to disk under the given output directory.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a4bb832d80b1822122a2fde5a67ffc847">More...</a><br /></td></tr>
+<tr class="separator:a4bb832d80b1822122a2fde5a67ffc847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fca84f086c2b7af79eac3daca4fd1f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1fca84f086c2b7af79eac3daca4fd1f0">extractAll</a> (const std::string &amp;outputDir, bool createUnderPackFileDir=true) const</td></tr>
+<tr class="memdesc:a1fca84f086c2b7af79eac3daca4fd1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the contents of the pack file to disk at the given directory.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1fca84f086c2b7af79eac3daca4fd1f0">More...</a><br /></td></tr>
+<tr class="separator:a1fca84f086c2b7af79eac3daca4fd1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e00aa01b95da7597c1bc22226b0f494"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6e00aa01b95da7597c1bc22226b0f494">extractAll</a> (const std::string &amp;outputDir, const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1302cbbb9ef974236e9e455f74b91e34">EntryPredicate</a> &amp;predicate, bool stripSharedDirs=true) const</td></tr>
+<tr class="memdesc:a6e00aa01b95da7597c1bc22226b0f494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the contents of the pack file to disk at the given directory - only entries which match the predicate are extracted.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6e00aa01b95da7597c1bc22226b0f494">More...</a><br /></td></tr>
+<tr class="separator:a6e00aa01b95da7597c1bc22226b0f494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa87dae0e8819ba18b84ba878b6acc1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">EntryTrie</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#adfa87dae0e8819ba18b84ba878b6acc1">getBakedEntries</a> () const</td></tr>
+<tr class="memdesc:adfa87dae0e8819ba18b84ba878b6acc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get entries saved to disk.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#adfa87dae0e8819ba18b84ba878b6acc1">More...</a><br /></td></tr>
+<tr class="separator:adfa87dae0e8819ba18b84ba878b6acc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c6cf145a62a0e0b278bc0a990f4993"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">EntryTrie</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#af5c6cf145a62a0e0b278bc0a990f4993">getUnbakedEntries</a> () const</td></tr>
+<tr class="memdesc:af5c6cf145a62a0e0b278bc0a990f4993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get entries that have been added but not yet baked.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#af5c6cf145a62a0e0b278bc0a990f4993">More...</a><br /></td></tr>
+<tr class="separator:af5c6cf145a62a0e0b278bc0a990f4993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae977929545db8a5554b7d14de8d4fb92"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae977929545db8a5554b7d14de8d4fb92">getEntryCount</a> (bool includeUnbaked=true) const</td></tr>
+<tr class="memdesc:ae977929545db8a5554b7d14de8d4fb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of entries in the pack file.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae977929545db8a5554b7d14de8d4fb92">More...</a><br /></td></tr>
+<tr class="separator:ae977929545db8a5554b7d14de8d4fb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86d38291517dbe3fe59a6e84d6ac796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ab86d38291517dbe3fe59a6e84d6ac796">runForAllEntries</a> (const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> &amp;operation, bool includeUnbaked=true) const</td></tr>
+<tr class="memdesc:ab86d38291517dbe3fe59a6e84d6ac796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a callback for each entry in the pack file.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#ab86d38291517dbe3fe59a6e84d6ac796">More...</a><br /></td></tr>
+<tr class="separator:ab86d38291517dbe3fe59a6e84d6ac796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1a74e55c0107dab0bcc575cadca44f"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#aef1a74e55c0107dab0bcc575cadca44f">getFilepath</a> () const</td></tr>
+<tr class="memdesc:aef1a74e55c0107dab0bcc575cadca44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">/home/user/pak01_dir.vpk  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#aef1a74e55c0107dab0bcc575cadca44f">More...</a><br /></td></tr>
+<tr class="separator:aef1a74e55c0107dab0bcc575cadca44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74ddd424c039253ec6814d8c899a7f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ab74ddd424c039253ec6814d8c899a7f4">getTruncatedFilepath</a> () const</td></tr>
+<tr class="memdesc:ab74ddd424c039253ec6814d8c899a7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">/home/user/pak01_dir.vpk -&gt; /home/user/pak01  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#ab74ddd424c039253ec6814d8c899a7f4">More...</a><br /></td></tr>
+<tr class="separator:ab74ddd424c039253ec6814d8c899a7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fc43757442e6020f9c9721f5978196"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a97fc43757442e6020f9c9721f5978196">getFilename</a> () const</td></tr>
+<tr class="memdesc:a97fc43757442e6020f9c9721f5978196"><td class="mdescLeft">&#160;</td><td class="mdescRight">/home/user/pak01_dir.vpk -&gt; pak01_dir.vpk  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a97fc43757442e6020f9c9721f5978196">More...</a><br /></td></tr>
+<tr class="separator:a97fc43757442e6020f9c9721f5978196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61c2f83baa00b476381db7ed62ba8a5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae61c2f83baa00b476381db7ed62ba8a5">getTruncatedFilename</a> () const</td></tr>
+<tr class="memdesc:ae61c2f83baa00b476381db7ed62ba8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">/home/user/pak01_dir.vpk -&gt; pak01.vpk  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae61c2f83baa00b476381db7ed62ba8a5">More...</a><br /></td></tr>
+<tr class="separator:ae61c2f83baa00b476381db7ed62ba8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9049666d21c23bf3a619f56499715e5f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9049666d21c23bf3a619f56499715e5f">getFilestem</a> () const</td></tr>
+<tr class="memdesc:a9049666d21c23bf3a619f56499715e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">/home/user/pak01_dir.vpk -&gt; pak01_dir  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9049666d21c23bf3a619f56499715e5f">More...</a><br /></td></tr>
+<tr class="separator:a9049666d21c23bf3a619f56499715e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a48240177f0c3b422b5a7bd768e9ae"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a62a48240177f0c3b422b5a7bd768e9ae">getTruncatedFilestem</a> () const</td></tr>
+<tr class="memdesc:a62a48240177f0c3b422b5a7bd768e9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">/home/user/pak01_dir.vpk -&gt; pak01  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a62a48240177f0c3b422b5a7bd768e9ae">More...</a><br /></td></tr>
+<tr class="separator:a62a48240177f0c3b422b5a7bd768e9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd54146ca55df688b06b20926a636c66"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/d29/namespacevpkpp.html#a63727a96905643976a73888dcc838dae">Attribute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#acd54146ca55df688b06b20926a636c66">getSupportedEntryAttributes</a> () const</td></tr>
+<tr class="memdesc:acd54146ca55df688b06b20926a636c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of supported entry attributes Mostly for GUI programs that show entries and their metadata in a table ;)  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#acd54146ca55df688b06b20926a636c66">More...</a><br /></td></tr>
+<tr class="separator:acd54146ca55df688b06b20926a636c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62dfd9906a76c6db9d906770852718c7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a62dfd9906a76c6db9d906770852718c7">operator std::string</a> () const</td></tr>
+<tr class="separator:a62dfd9906a76c6db9d906770852718c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a921274401ceb6feb0c0ba12c45077ec1"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a921274401ceb6feb0c0ba12c45077ec1">open</a> (const std::string &amp;path, <a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a> <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6f451dac4b164d7f8f9fc667f546fcaa">options</a>={}, const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> &amp;callback=nullptr)</td></tr>
+<tr class="memdesc:a921274401ceb6feb0c0ba12c45077ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a generic pack file. The parser is selected based on the file extension.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a921274401ceb6feb0c0ba12c45077ec1">More...</a><br /></td></tr>
+<tr class="separator:a921274401ceb6feb0c0ba12c45077ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee6b87fa3e7657781018941a632e3a1"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#aaee6b87fa3e7657781018941a632e3a1">escapeEntryPathForWrite</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:aaee6b87fa3e7657781018941a632e3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">On Windows, some characters and file names are invalid - this escapes the given entry path.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#aaee6b87fa3e7657781018941a632e3a1">More...</a><br /></td></tr>
+<tr class="separator:aaee6b87fa3e7657781018941a632e3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35950f6b90282361482a7b18c6fbde08"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a35950f6b90282361482a7b18c6fbde08">getSupportedFileTypes</a> ()</td></tr>
+<tr class="memdesc:a35950f6b90282361482a7b18c6fbde08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of supported extensions, e.g. {".vpk", ".bsp"}.  <a href="../../d2/dd2/classvpkpp_1_1PackFile.html#a35950f6b90282361482a7b18c6fbde08">More...</a><br /></td></tr>
+<tr class="separator:a35950f6b90282361482a7b18c6fbde08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a0139dcf824decb806270d4233cc1518c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">FactoryFunction</a> = std::function&lt; std::unique_ptr&lt; <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &gt;(const std::string &amp;path, <a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a> <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6f451dac4b164d7f8f9fc667f546fcaa">options</a>, const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> &amp;callback)&gt;</td></tr>
+<tr class="separator:a0139dcf824decb806270d4233cc1518c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af716aafa5f4db1f8dc095b836923c71e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#af716aafa5f4db1f8dc095b836923c71e">PackFile</a> (std::string fullFilePath_, <a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a> options_)</td></tr>
+<tr class="separator:af716aafa5f4db1f8dc095b836923c71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818133a0eb1603d19fba7920268d04d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a818133a0eb1603d19fba7920268d04d9">runForAllEntriesInternal</a> (const std::function&lt; void(const std::string &amp;, <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;)&gt; &amp;operation, bool includeUnbaked=true)</td></tr>
+<tr class="separator:a818133a0eb1603d19fba7920268d04d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7ade9f6e4a156e5868e9eaf52d84e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6e7ade9f6e4a156e5868e9eaf52d84e9">verifyEntryChecksumsUsingCRC32</a> () const</td></tr>
+<tr class="separator:a6e7ade9f6e4a156e5868e9eaf52d84e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38027f0d19d7b847306d7950d1073d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ab38027f0d19d7b847306d7950d1073d7">addEntryInternal</a> (<a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;entry, const std::string &amp;path, std::vector&lt; std::byte &gt; &amp;buffer, <a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a> options_)=0</td></tr>
+<tr class="separator:ab38027f0d19d7b847306d7950d1073d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f29b52d69f2cd3fa247c5020c043417"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9f29b52d69f2cd3fa247c5020c043417">getBakeOutputDir</a> (const std::string &amp;outputDir) const</td></tr>
+<tr class="separator:a9f29b52d69f2cd3fa247c5020c043417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3acac5e0471849709ae432d6a99687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a3a3acac5e0471849709ae432d6a99687">mergeUnbakedEntries</a> ()</td></tr>
+<tr class="separator:a3a3acac5e0471849709ae432d6a99687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac115137c97c3ba1f2705a227aafeb482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ac115137c97c3ba1f2705a227aafeb482">setFullFilePath</a> (const std::string &amp;outputDir)</td></tr>
+<tr class="separator:ac115137c97c3ba1f2705a227aafeb482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf51429607ac52d3a226e465b6c75fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#acbf51429607ac52d3a226e465b6c75fd">cleanEntryPath</a> (const std::string &amp;path) const</td></tr>
+<tr class="separator:acbf51429607ac52d3a226e465b6c75fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae3f2940fa07872e72e9e9982dcd77504"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae3f2940fa07872e72e9e9982dcd77504">createNewEntry</a> ()</td></tr>
+<tr class="separator:ae3f2940fa07872e72e9e9982dcd77504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b814306d1cf50326235de8b0e1ab03"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; std::vector&lt; std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#af7b814306d1cf50326235de8b0e1ab03">readUnbakedEntry</a> (const <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;entry)</td></tr>
+<tr class="separator:af7b814306d1cf50326235de8b0e1ab03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc85b31fe1751b3104389af113c32901"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">FactoryFunction</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#acc85b31fe1751b3104389af113c32901">getOpenExtensionRegistry</a> ()</td></tr>
+<tr class="separator:acc85b31fe1751b3104389af113c32901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d5a7b79c3c10d64745048eb5b18b21"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">FactoryFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a48d5a7b79c3c10d64745048eb5b18b21">registerOpenExtensionForTypeFactory</a> (std::string_view extension, const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">FactoryFunction</a> &amp;factory)</td></tr>
+<tr class="separator:a48d5a7b79c3c10d64745048eb5b18b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a5fa46f071a4945b5dcd2e65bfd09e3d5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a5fa46f071a4945b5dcd2e65bfd09e3d5">fullFilePath</a></td></tr>
+<tr class="separator:a5fa46f071a4945b5dcd2e65bfd09e3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df5acc30e128b3ad9c88d8d07d51aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d29/namespacevpkpp.html#aa85a67fde1caa75abb46425eaa54d926">PackFileType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a2df5acc30e128b3ad9c88d8d07d51aec">type</a> = <a class="el" href="../../d5/d29/namespacevpkpp.html#aa85a67fde1caa75abb46425eaa54d926a696b031073e74bf2cb98e5ef201d4aa3">PackFileType::UNKNOWN</a></td></tr>
+<tr class="separator:a2df5acc30e128b3ad9c88d8d07d51aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f451dac4b164d7f8f9fc667f546fcaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6f451dac4b164d7f8f9fc667f546fcaa">options</a></td></tr>
+<tr class="separator:a6f451dac4b164d7f8f9fc667f546fcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e0817ce01fc83fbe68a7624192808a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">EntryTrie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a65e0817ce01fc83fbe68a7624192808a">entries</a></td></tr>
+<tr class="separator:a65e0817ce01fc83fbe68a7624192808a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e68c951fd18b8ee1d930f43516e3f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">EntryTrie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#ae5e68c951fd18b8ee1d930f43516e3f6">unbakedEntries</a></td></tr>
+<tr class="separator:ae5e68c951fd18b8ee1d930f43516e3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00027">27</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a9169f465a648ca355bce9cac1224322b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9169f465a648ca355bce9cac1224322b">&#9670;&nbsp;</a></span>EntryCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">vpkpp::PackFile::EntryCallback</a> =  std::function&lt;void(const std::string&amp; path, const <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a>&amp; entry)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accepts the entry's path and metadata. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00030">30</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a1302cbbb9ef974236e9e455f74b91e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1302cbbb9ef974236e9e455f74b91e34">&#9670;&nbsp;</a></span>EntryPredicate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1302cbbb9ef974236e9e455f74b91e34">vpkpp::PackFile::EntryPredicate</a> =  std::function&lt;bool(const std::string&amp; path, const <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a>&amp; entry)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accepts the entry's path and metadata. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00033">33</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a1462ffbd23782248dfa0cf21575e1676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1462ffbd23782248dfa0cf21575e1676">&#9670;&nbsp;</a></span>EntryTrie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">vpkpp::PackFile::EntryTrie</a> =  tsl::htrie_map&lt;char, <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00035">35</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a0139dcf824decb806270d4233cc1518c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0139dcf824decb806270d4233cc1518c">&#9670;&nbsp;</a></span>FactoryFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">vpkpp::PackFile::FactoryFunction</a> =  std::function&lt;std::unique_ptr&lt;<a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a>&gt;(const std::string&amp; path, <a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a> <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a6f451dac4b164d7f8f9fc667f546fcaa">options</a>, const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a>&amp; callback)&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00205">205</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adc77a118c34eab29dd5510d33b69816e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc77a118c34eab29dd5510d33b69816e">&#9670;&nbsp;</a></span>PackFile() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vpkpp::PackFile::PackFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7944fb8e4ba984e4a5facee3e2122f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7944fb8e4ba984e4a5facee3e2122f61">&#9670;&nbsp;</a></span>PackFile() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vpkpp::PackFile::PackFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21ca5cc0d75c60dfdbb5ca09f902702a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ca5cc0d75c60dfdbb5ca09f902702a">&#9670;&nbsp;</a></span>~PackFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual vpkpp::PackFile::~PackFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af716aafa5f4db1f8dc095b836923c71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af716aafa5f4db1f8dc095b836923c71e">&#9670;&nbsp;</a></span>PackFile() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PackFile::PackFile </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fullFilePath_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a>&#160;</td>
+          <td class="paramname"><em>options_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a969e4df13d472ef2915ab87cba1f97a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969e4df13d472ef2915ab87cba1f97a1">&#9670;&nbsp;</a></span>addEntry() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PackFile::addEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>entryPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a>&#160;</td>
+          <td class="paramname"><em>options_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new entry from a file path - the first parameter is the path in the <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a>, the second is the path on disk. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00192">192</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac70e6a0880b1893fc76ba3fc53fa8676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70e6a0880b1893fc76ba3fc53fa8676">&#9670;&nbsp;</a></span>addEntry() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PackFile::addEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::byte *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>bufferLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a>&#160;</td>
+          <td class="paramname"><em>options_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new entry from a buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00224">224</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a641bdd900cffda0e116343b7d48b306f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641bdd900cffda0e116343b7d48b306f">&#9670;&nbsp;</a></span>addEntry() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PackFile::addEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::byte &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a>&#160;</td>
+          <td class="paramname"><em>options_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new entry from a buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00209">209</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab38027f0d19d7b847306d7950d1073d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38027f0d19d7b847306d7950d1073d7">&#9670;&nbsp;</a></span>addEntryInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vpkpp::PackFile::addEntryInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::byte &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d5b/structvpkpp_1_1EntryOptions.html">EntryOptions</a>&#160;</td>
+          <td class="paramname"><em>options_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d2/d8b/classvpkpp_1_1EXAMPLE.html#af6c91079753919cfaebd55571d51265c">vpkpp::EXAMPLE</a>, <a class="el" href="../../da/de7/classvpkpp_1_1ZIP.html#aaf371d21b3ef3759712f03b6d15dcaeb">vpkpp::ZIP</a>, <a class="el" href="../../d4/ddb/classvpkpp_1_1VPK__VTMB.html#af47d29c72567e3fa26097819f00e8799">vpkpp::VPK_VTMB</a>, <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a49c9680647739bd3b9c1779c1da0b91e">vpkpp::VPK</a>, <a class="el" href="../../d5/db5/classvpkpp_1_1PCK.html#a618128fbda6f80796662b1dc1e821992">vpkpp::PCK</a>, <a class="el" href="../../d9/daf/classvpkpp_1_1PAK.html#a67ccacfafa91771833e42c08bb9e9b74">vpkpp::PAK</a>, <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#a8e7aaffbe1b81711618608b347192e3f">vpkpp::GMA</a>, and <a class="el" href="../../de/df6/classvpkpp_1_1PackFileReadOnly.html#a87e17d43ee493a80dda8bb555ceec361">vpkpp::PackFileReadOnly</a>.</p>
+
+</div>
+</div>
+<a id="abe1d54eb7cf2d09a7a6bd599277259fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1d54eb7cf2d09a7a6bd599277259fc">&#9670;&nbsp;</a></span>bake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vpkpp::PackFile::bake </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outputDir_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If output folder is unspecified, it will overwrite the original. </p>
+
+<p>Implemented in <a class="el" href="../../d2/d8b/classvpkpp_1_1EXAMPLE.html#a3892745f8440164a0bea403ed7ee6617">vpkpp::EXAMPLE</a>, <a class="el" href="../../da/de7/classvpkpp_1_1ZIP.html#abe77bed8f012b112d3ed66cafd5965a3">vpkpp::ZIP</a>, <a class="el" href="../../d4/ddb/classvpkpp_1_1VPK__VTMB.html#a7a3066f9c4a04f481e85a5d98902cce1">vpkpp::VPK_VTMB</a>, <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a2e6c398e68a4109d0ce3c41e90b216b9">vpkpp::VPK</a>, <a class="el" href="../../d5/db5/classvpkpp_1_1PCK.html#a427453f9cc8a4c443dc71a981af66a15">vpkpp::PCK</a>, <a class="el" href="../../d9/daf/classvpkpp_1_1PAK.html#a87eaed6ea721f92aafd165ab660c1102">vpkpp::PAK</a>, <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#ad2f24de6268c3805cecf751a226006d1">vpkpp::GMA</a>, <a class="el" href="../../d2/da8/classvpkpp_1_1BSP.html#a348ba165485425ea4bd225ec3424acd1">vpkpp::BSP</a>, and <a class="el" href="../../de/df6/classvpkpp_1_1PackFileReadOnly.html#a3f1d2f565e289b6dc2072594b2817016">vpkpp::PackFileReadOnly</a>.</p>
+
+</div>
+</div>
+<a id="acbf51429607ac52d3a226e465b6c75fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf51429607ac52d3a226e465b6c75fd">&#9670;&nbsp;</a></span>cleanEntryPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::cleanEntryPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00595">595</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae3f2940fa07872e72e9e9982dcd77504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f2940fa07872e72e9e9982dcd77504">&#9670;&nbsp;</a></span>createNewEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> PackFile::createNewEntry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00604">604</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaee6b87fa3e7657781018941a632e3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee6b87fa3e7657781018941a632e3a1">&#9670;&nbsp;</a></span>escapeEntryPathForWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::escapeEntryPathForWrite </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>On Windows, some characters and file names are invalid - this escapes the given entry path. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00525">525</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1fca84f086c2b7af79eac3daca4fd1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fca84f086c2b7af79eac3daca4fd1f0">&#9670;&nbsp;</a></span>extractAll() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::extractAll </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outputDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>createUnderPackFileDir</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the contents of the pack file to disk at the given directory. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6e00aa01b95da7597c1bc22226b0f494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e00aa01b95da7597c1bc22226b0f494">&#9670;&nbsp;</a></span>extractAll() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::extractAll </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outputDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1302cbbb9ef974236e9e455f74b91e34">EntryPredicate</a> &amp;&#160;</td>
+          <td class="paramname"><em>predicate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>stripSharedDirs</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the contents of the pack file to disk at the given directory - only entries which match the predicate are extracted. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00382">382</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4bb832d80b1822122a2fde5a67ffc847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb832d80b1822122a2fde5a67ffc847">&#9670;&nbsp;</a></span>extractDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::extractDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dir_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outputDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the given directory to disk under the given output directory. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00335">335</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5b22edd8215966e194d9875fac0fe923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b22edd8215966e194d9875fac0fe923">&#9670;&nbsp;</a></span>extractEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::extractEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>entryPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the given entry to disk at the given file path. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00316">316</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a463c6aa921a769b79952de90e458190b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463c6aa921a769b79952de90e458190b">&#9670;&nbsp;</a></span>findEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &gt; PackFile::findEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeUnbaked</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to find an entry given the file path. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adfa87dae0e8819ba18b84ba878b6acc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa87dae0e8819ba18b84ba878b6acc1">&#9670;&nbsp;</a></span>getBakedEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">PackFile::EntryTrie</a> &amp; PackFile::getBakedEntries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get entries saved to disk. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00447">447</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f29b52d69f2cd3fa247c5020c043417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f29b52d69f2cd3fa247c5020c043417">&#9670;&nbsp;</a></span>getBakeOutputDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::getBakeOutputDir </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outputDir</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00558">558</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae977929545db8a5554b7d14de8d4fb92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae977929545db8a5554b7d14de8d4fb92">&#9670;&nbsp;</a></span>getEntryCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t PackFile::getEntryCount </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeUnbaked</em> = <code>true</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of entries in the pack file. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a97fc43757442e6020f9c9721f5978196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97fc43757442e6020f9c9721f5978196">&#9670;&nbsp;</a></span>getFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::getFilename </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>/home/user/pak01_dir.vpk -&gt; pak01_dir.vpk </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00500">500</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aef1a74e55c0107dab0bcc575cadca44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1a74e55c0107dab0bcc575cadca44f">&#9670;&nbsp;</a></span>getFilepath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view PackFile::getFilepath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>/home/user/pak01_dir.vpk </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00492">492</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9049666d21c23bf3a619f56499715e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9049666d21c23bf3a619f56499715e5f">&#9670;&nbsp;</a></span>getFilestem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::getFilestem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>/home/user/pak01_dir.vpk -&gt; pak01_dir </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00509">509</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc85b31fe1751b3104389af113c32901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc85b31fe1751b3104389af113c32901">&#9670;&nbsp;</a></span>getOpenExtensionRegistry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">PackFile::FactoryFunction</a> &gt; &gt; &amp; PackFile::getOpenExtensionRegistry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00623">623</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5883051c60c72153edbc9d7363f6f36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5883051c60c72153edbc9d7363f6f36f">&#9670;&nbsp;</a></span>getOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a> PackFile::getOptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current options of the pack file. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd54146ca55df688b06b20926a636c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd54146ca55df688b06b20926a636c66">&#9670;&nbsp;</a></span>getSupportedEntryAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d29/namespacevpkpp.html#a63727a96905643976a73888dcc838dae">Attribute</a> PackFile::getSupportedEntryAttributes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a list of supported entry attributes Mostly for GUI programs that show entries and their metadata in a table ;) </p>
+
+<p>Reimplemented in <a class="el" href="../../d2/d8b/classvpkpp_1_1EXAMPLE.html#a990479fab18cb1e8c61a06cfc74f8c22">vpkpp::EXAMPLE</a>, <a class="el" href="../../da/de7/classvpkpp_1_1ZIP.html#a0ba2601d56377c7c5a8261f161e5e83f">vpkpp::ZIP</a>, <a class="el" href="../../d4/ddb/classvpkpp_1_1VPK__VTMB.html#a37fea8d5ced63fad607eeb794d99bcc3">vpkpp::VPK_VTMB</a>, <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a03d454767aaf325a9fe83f20e9b12571">vpkpp::VPK</a>, <a class="el" href="../../d5/db5/classvpkpp_1_1PCK.html#abf9b4be11d31cf32d60f6af820ae892d">vpkpp::PCK</a>, <a class="el" href="../../d9/daf/classvpkpp_1_1PAK.html#a6dfe97c298800eb70125f45eea75bea8">vpkpp::PAK</a>, <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#a7841107681ad985627624acb7895b83a">vpkpp::GMA</a>, and <a class="el" href="../../d1/d01/classvpkpp_1_1GCF.html#ac7c384b4769d966388b20a6db967ee83">vpkpp::GCF</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00517">517</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a35950f6b90282361482a7b18c6fbde08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35950f6b90282361482a7b18c6fbde08">&#9670;&nbsp;</a></span>getSupportedFileTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; PackFile::getSupportedFileTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a list of supported extensions, e.g. {".vpk", ".bsp"}. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00535">535</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae61c2f83baa00b476381db7ed62ba8a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61c2f83baa00b476381db7ed62ba8a5">&#9670;&nbsp;</a></span>getTruncatedFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::getTruncatedFilename </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>/home/user/pak01_dir.vpk -&gt; pak01.vpk </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00504">504</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab74ddd424c039253ec6814d8c899a7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74ddd424c039253ec6814d8c899a7f4">&#9670;&nbsp;</a></span>getTruncatedFilepath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::getTruncatedFilepath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>/home/user/pak01_dir.vpk -&gt; /home/user/pak01 </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00496">496</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a62a48240177f0c3b422b5a7bd768e9ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a48240177f0c3b422b5a7bd768e9ae">&#9670;&nbsp;</a></span>getTruncatedFilestem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PackFile::getTruncatedFilestem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>/home/user/pak01_dir.vpk -&gt; pak01 </p>
+
+<p>Reimplemented in <a class="el" href="../../d4/ddb/classvpkpp_1_1VPK__VTMB.html#ab781e0350de1cd753b28eb15c78dddfd">vpkpp::VPK_VTMB</a>, and <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#ac1871511bcf3cdc30c0481ed54a91f96">vpkpp::VPK</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00513">513</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1b441d33f287e522af51446219111c31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b441d33f287e522af51446219111c31">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d29/namespacevpkpp.html#aa85a67fde1caa75abb46425eaa54d926">PackFileType</a> PackFile::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the file type of the pack file. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af5c6cf145a62a0e0b278bc0a990f4993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5c6cf145a62a0e0b278bc0a990f4993">&#9670;&nbsp;</a></span>getUnbakedEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">PackFile::EntryTrie</a> &amp; PackFile::getUnbakedEntries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get entries that have been added but not yet baked. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00451">451</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9188af670e9624028d6f61a8347c2161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9188af670e9624028d6f61a8347c2161">&#9670;&nbsp;</a></span>hasEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::hasEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeUnbaked</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if an entry exists given the file path. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a01489dadc91ac52b3c4665b58a40a6ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01489dadc91ac52b3c4665b58a40a6ff">&#9670;&nbsp;</a></span>hasEntryChecksums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual constexpr bool vpkpp::PackFile::hasEntryChecksums </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the format has a checksum for each entry. </p>
+
+<p>Reimplemented in <a class="el" href="../../da/de7/classvpkpp_1_1ZIP.html#a0bbbda752f42df0c0dc9a34db6a10e62">vpkpp::ZIP</a>, <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a77b2431541562fe5d9d764d0f1546085">vpkpp::VPK</a>, <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#a8174579010783acb5d6389df969dfcab">vpkpp::GMA</a>, and <a class="el" href="../../d1/d01/classvpkpp_1_1GCF.html#a8284288c70f448ea1cb436bf018e0c70">vpkpp::GCF</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00055">55</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a6a34e06dd55959ef95b88d2763cc5d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a34e06dd55959ef95b88d2763cc5d1a">&#9670;&nbsp;</a></span>hasPackFileChecksum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::hasPackFileChecksum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the entire file has a checksum. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a780e1cc48325e7294c2791872edcc227">vpkpp::VPK</a>, and <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#a8e1b42953add9309894e1aa75567318e">vpkpp::GMA</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a25621c2a03fbf947b4a46176dc63eb23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25621c2a03fbf947b4a46176dc63eb23">&#9670;&nbsp;</a></span>hasPackFileSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::hasPackFileSignature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the file is signed. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a6785961c081d6fb0be4e1408703e2229">vpkpp::VPK</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae16b67d23c583d1fff3197050c7deda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16b67d23c583d1fff3197050c7deda6">&#9670;&nbsp;</a></span>isCaseSensitive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual constexpr bool vpkpp::PackFile::isCaseSensitive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Does the format support case-sensitive file names? </p>
+
+<p>Reimplemented in <a class="el" href="../../d2/d8b/classvpkpp_1_1EXAMPLE.html#a381d934661caf2b885806d7600d0d0fb">vpkpp::EXAMPLE</a>, <a class="el" href="../../da/de7/classvpkpp_1_1ZIP.html#a3665354b752c2e0bbec860620befe9c5">vpkpp::ZIP</a>, <a class="el" href="../../d5/db5/classvpkpp_1_1PCK.html#ad839861c2155285420a90312aa869dea">vpkpp::PCK</a>, and <a class="el" href="../../d2/da8/classvpkpp_1_1BSP.html#ac89f4b0e6acd2f0aaa5985fedf130a69">vpkpp::BSP</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00078">78</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a71dd4ec9ff22e4423fa22e1c9349fd94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71dd4ec9ff22e4423fa22e1c9349fd94">&#9670;&nbsp;</a></span>isReadOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual constexpr bool vpkpp::PackFile::isReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../de/df6/classvpkpp_1_1PackFileReadOnly.html#abb1345f1ac6efc670ec12e44bb61e692">vpkpp::PackFileReadOnly</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00094">94</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a3a3acac5e0471849709ae432d6a99687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3acac5e0471849709ae432d6a99687">&#9670;&nbsp;</a></span>mergeUnbakedEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PackFile::mergeUnbakedEntries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00574">574</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a921274401ceb6feb0c0ba12c45077ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921274401ceb6feb0c0ba12c45077ec1">&#9670;&nbsp;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &gt; PackFile::open </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a>&#160;</td>
+          <td class="paramname"><em>options</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open a generic pack file. The parser is selected based on the file extension. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a62dfd9906a76c6db9d906770852718c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62dfd9906a76c6db9d906770852718c7">&#9670;&nbsp;</a></span>operator std::string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PackFile::operator std::string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d2/d8b/classvpkpp_1_1EXAMPLE.html#aee4f51717e7308d4cc802f787c43cb2b">vpkpp::EXAMPLE</a>, <a class="el" href="../../de/df6/classvpkpp_1_1PackFileReadOnly.html#a0055caa347cc43e4bcc5e61fea1010a6">vpkpp::PackFileReadOnly</a>, <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a7c426770ce5c05057440449a3adb06a8">vpkpp::VPK</a>, <a class="el" href="../../d5/db5/classvpkpp_1_1PCK.html#aa75aea6a2b43e4a1811d15223fbea273">vpkpp::PCK</a>, <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#a9dec308262366ac77d263efcb2b0de9d">vpkpp::GMA</a>, <a class="el" href="../../d1/d01/classvpkpp_1_1GCF.html#aba7afed5a06497f31f7e3de2c01c3b19">vpkpp::GCF</a>, and <a class="el" href="../../d2/da8/classvpkpp_1_1BSP.html#a94c1bdfc6f16506b732fba50db143d23">vpkpp::BSP</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00521">521</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51a881c48a518815883527ea3b25a7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a881c48a518815883527ea3b25a7b6">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a>&amp; vpkpp::PackFile::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb121b59f74e5ae117988d52a435e0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb121b59f74e5ae117988d52a435e0b3">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a>&amp; vpkpp::PackFile::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a490eb871b8b2528efd9dedef6ef22e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a490eb871b8b2528efd9dedef6ef22e1c">&#9670;&nbsp;</a></span>readEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::optional&lt;std::vector&lt;std::byte&gt; &gt; vpkpp::PackFile::readEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path_</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Try to read the entry's data to a bytebuffer. </p>
+
+<p>Implemented in <a class="el" href="../../d2/d8b/classvpkpp_1_1EXAMPLE.html#aa0740ac3b7c3be4ba5bb572aa65a7d9c">vpkpp::EXAMPLE</a>, <a class="el" href="../../da/de7/classvpkpp_1_1ZIP.html#aa5910f6aa2a6e53d2727fc741c5e2707">vpkpp::ZIP</a>, <a class="el" href="../../d4/ddb/classvpkpp_1_1VPK__VTMB.html#a91e531b118c2d9c7e6f5427081345886">vpkpp::VPK_VTMB</a>, <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a87d946696aac2ba67706b0b7f44b4bff">vpkpp::VPK</a>, <a class="el" href="../../d5/db5/classvpkpp_1_1PCK.html#a80607a84467af973ea3ab879b3f8a24b">vpkpp::PCK</a>, <a class="el" href="../../d9/daf/classvpkpp_1_1PAK.html#a202cfc389d98aca777eff9d61e1d1711">vpkpp::PAK</a>, <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#acc6dd86a1a690ddf593f3a831d911dd3">vpkpp::GMA</a>, and <a class="el" href="../../d1/d01/classvpkpp_1_1GCF.html#ad82b35254e3df131300472ebeb4c5642">vpkpp::GCF</a>.</p>
+
+</div>
+</div>
+<a id="a1a9b46edadc22f435879fed64399b671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9b46edadc22f435879fed64399b671">&#9670;&nbsp;</a></span>readEntryText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::string &gt; PackFile::readEntryText </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to read the entry's data to a string. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af7b814306d1cf50326235de8b0e1ab03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b814306d1cf50326235de8b0e1ab03">&#9670;&nbsp;</a></span>readUnbakedEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::vector&lt; std::byte &gt; &gt; PackFile::readUnbakedEntry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00608">608</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a48d5a7b79c3c10d64745048eb5b18b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d5a7b79c3c10d64745048eb5b18b21">&#9670;&nbsp;</a></span>registerOpenExtensionForTypeFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">PackFile::FactoryFunction</a> &amp; PackFile::registerOpenExtensionForTypeFactory </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>extension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a0139dcf824decb806270d4233cc1518c">FactoryFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>factory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00628">628</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2baa28d03d0c0892319547b10957d343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2baa28d03d0c0892319547b10957d343">&#9670;&nbsp;</a></span>removeDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t PackFile::removeDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dirName_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a directory. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a097bb8a52c68ca1253b1e1b9817f230d">vpkpp::VPK</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aed35a45b68bff1eedcc3a217cf7563b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed35a45b68bff1eedcc3a217cf7563b7">&#9670;&nbsp;</a></span>removeEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::removeEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove an entry. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#aa1e0ac4d125dd6e1129bee61a3653750">vpkpp::VPK</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00281">281</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38cdbbd142dd32068e21299b5072627d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cdbbd142dd32068e21299b5072627d">&#9670;&nbsp;</a></span>renameDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::renameDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>oldDir_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>newDir_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rename an existing directory. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00252">252</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9209de4b9d185e2a3fba2a727ecae65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9209de4b9d185e2a3fba2a727ecae65a">&#9670;&nbsp;</a></span>renameEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::renameEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>oldPath_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>newPath_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rename an existing entry. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab86d38291517dbe3fe59a6e84d6ac796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86d38291517dbe3fe59a6e84d6ac796">&#9670;&nbsp;</a></span>runForAllEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PackFile::runForAllEntries </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a9169f465a648ca355bce9cac1224322b">EntryCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>operation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeUnbaked</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run a callback for each entry in the pack file. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a818133a0eb1603d19fba7920268d04d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818133a0eb1603d19fba7920268d04d9">&#9670;&nbsp;</a></span>runForAllEntriesInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PackFile::runForAllEntriesInternal </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void(const std::string &amp;, <a class="el" href="../../d9/d6b/classvpkpp_1_1Entry.html">Entry</a> &amp;)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>operation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeUnbaked</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00478">478</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac115137c97c3ba1f2705a227aafeb482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac115137c97c3ba1f2705a227aafeb482">&#9670;&nbsp;</a></span>setFullFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PackFile::setFullFilePath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outputDir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00590">590</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a632694d8d4478215efc581d400ff465b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632694d8d4478215efc581d400ff465b">&#9670;&nbsp;</a></span>verifyEntryChecksums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; PackFile::verifyEntryChecksums </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verify the checksums of each file, if a file fails the check its path will be added to the vector If there is no checksum ability in the format, it will return an empty vector. </p>
+
+<p>Reimplemented in <a class="el" href="../../da/de7/classvpkpp_1_1ZIP.html#a47a0128e14788f01ebef3d6518925659">vpkpp::ZIP</a>, <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a520d2b2ab3878644f6954f6ada54d61b">vpkpp::VPK</a>, <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#a862027b34066fdfdbd995eb89c9a6739">vpkpp::GMA</a>, and <a class="el" href="../../d1/d01/classvpkpp_1_1GCF.html#a41716763d0081f46ff6eb3d04634fae0">vpkpp::GCF</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6e7ade9f6e4a156e5868e9eaf52d84e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7ade9f6e4a156e5868e9eaf52d84e9">&#9670;&nbsp;</a></span>verifyEntryChecksumsUsingCRC32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; PackFile::verifyEntryChecksumsUsingCRC32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00544">544</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a46893bdc6813e9d6a1f71ef0a1df4901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46893bdc6813e9d6a1f71ef0a1df4901">&#9670;&nbsp;</a></span>verifyPackFileChecksum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::verifyPackFileChecksum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verify the checksum of the entire file, returns true on success Will return true if there is no checksum ability in the format. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a83967e556e9cb1e19704ba4d7201502d">vpkpp::VPK</a>, and <a class="el" href="../../d6/d2c/classvpkpp_1_1GMA.html#a3d3b1dc610cbcdfe99c909ead844d415">vpkpp::GMA</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4ee6075bf81d76bb4c23377c5c33b36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee6075bf81d76bb4c23377c5c33b36e">&#9670;&nbsp;</a></span>verifyPackFileSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PackFile::verifyPackFileSignature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verify the file signature, returns true on success Will return true if there is no signature ability in the format. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d8b/classvpkpp_1_1VPK.html#a473e711ad6cff00f733db43663d0463d">vpkpp::VPK</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/PackFile_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a65e0817ce01fc83fbe68a7624192808a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e0817ce01fc83fbe68a7624192808a">&#9670;&nbsp;</a></span>entries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">EntryTrie</a> vpkpp::PackFile::entries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00202">202</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a5fa46f071a4945b5dcd2e65bfd09e3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa46f071a4945b5dcd2e65bfd09e3d5">&#9670;&nbsp;</a></span>fullFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vpkpp::PackFile::fullFilePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00197">197</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f451dac4b164d7f8f9fc667f546fcaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f451dac4b164d7f8f9fc667f546fcaa">&#9670;&nbsp;</a></span>options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/db7/structvpkpp_1_1PackFileOptions.html">PackFileOptions</a> vpkpp::PackFile::options</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00200">200</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="a2df5acc30e128b3ad9c88d8d07d51aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df5acc30e128b3ad9c88d8d07d51aec">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d29/namespacevpkpp.html#aa85a67fde1caa75abb46425eaa54d926">PackFileType</a> vpkpp::PackFile::type = <a class="el" href="../../d5/d29/namespacevpkpp.html#aa85a67fde1caa75abb46425eaa54d926a696b031073e74bf2cb98e5ef201d4aa3">PackFileType::UNKNOWN</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00199">199</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<a id="ae5e68c951fd18b8ee1d930f43516e3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e68c951fd18b8ee1d930f43516e3f6">&#9670;&nbsp;</a></span>unbakedEntries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html#a1462ffbd23782248dfa0cf21575e1676">EntryTrie</a> vpkpp::PackFile::unbakedEntries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df4/PackFile_8h_source.html#l00203">203</a> of file <a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>include/vpkpp/<a class="el" href="../../d3/df4/PackFile_8h_source.html">PackFile.h</a></li>
+<li>src/vpkpp/<a class="el" href="../../d3/d75/PackFile_8cpp_source.html">PackFile.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/d29/namespacevpkpp.html">vpkpp</a></li><li class="navelem"><a class="el" href="../../d2/dd2/classvpkpp_1_1PackFile.html">PackFile</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
