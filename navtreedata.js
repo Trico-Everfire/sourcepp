@@ -66,14 +66,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d1/dbf/GMA_8h.html#afc84db2ed44058792375f4a59518b7b1",
-"d3/dc8/namespacevicepp_1_1KnownCodes.html#aab5524671236a505bd67e8d7797959d2",
-"d5/d8b/classvpkpp_1_1VPK.html",
-"d6/d27/CRC32_8h.html#a6818bbd0d47838fd9e94e2d9a942f06a",
-"d8/d3f/steampp_8h.html",
-"da/daf/classkvpp_1_1KV1Element.html#af5b51b35519cab6ac529b6da65953f75",
-"de/d0f/classkvpp_1_1KV1.html",
-"namespacemembers_m.html"
+"d1/dbd/structmdlpp_1_1Movement.html#a5c6672fc6f39bf976227ae13a66860ca",
+"d3/d80/structvtfpp_1_1Resource.html#acd09d7ee06a97ae24066966fa8408e69a989c081dec4b185f76cf6170e6e02c6f",
+"d5/d29/namespacevpkpp.html#ad4d41789f3009280940d92748b4c7c77",
+"d5/daa/structmdlpp_1_1MDL_1_1MDL.html#a5d84fe6a1b8b42e72dd1a02316869e69",
+"d6/dbe/Vector_8h.html#aba5e0c824fd08d466c86c87849b898b2",
+"d8/df2/classvtfpp_1_1VTF.html#ab89e0e751af359ee6384725df7a96b26",
+"dc/d1f/structvpkpp_1_1GMA_1_1Header.html#aec3cdcd504b79029dd2e646a90046cc4",
+"de/d90/namespacevtfpp.html#aec3345feb8c8d1832efd60bd78ba336cad933b9f93d931f1aebc13f196c821f0f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

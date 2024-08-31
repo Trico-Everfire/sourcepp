@@ -3,6 +3,16 @@ var hierarchy =
     [ "bsppp::BSP", "d5/dba/classbsppp_1_1BSP.html", [
       [ "vpkpp::BSP", "d2/da8/classvpkpp_1_1BSP.html", null ]
     ] ],
+    [ "bsppp::BSPBrushModel_v0", "d3/db0/structbsppp_1_1BSPBrushModel__v0.html", null ],
+    [ "bsppp::BSPEdge_v0", "d8/d16/structbsppp_1_1BSPEdge__v0.html", null ],
+    [ "bsppp::BSPEdge_v1", "dd/d95/structbsppp_1_1BSPEdge__v1.html", null ],
+    [ "bsppp::BSPFace_v1", "d6/d98/structbsppp_1_1BSPFace__v1.html", null ],
+    [ "bsppp::BSPFace_v2", "d8/d85/structbsppp_1_1BSPFace__v2.html", null ],
+    [ "bsppp::BSPPlane_v0", "d8/de4/structbsppp_1_1BSPPlane__v0.html", null ],
+    [ "bsppp::BSPSurfEdge_v0", "df/d2e/structbsppp_1_1BSPSurfEdge__v0.html", null ],
+    [ "bsppp::BSPTextureData_v0", "d1/d93/structbsppp_1_1BSPTextureData__v0.html", null ],
+    [ "bsppp::BSPTextureInfo_v0", "d3/d0f/structbsppp_1_1BSPTextureInfo__v0.html", null ],
+    [ "bsppp::BSPVertex_v0", "d2/d27/structbsppp_1_1BSPVertex__v0.html", null ],
     [ "dmxpp::DMX", "d1/d5f/classdmxpp_1_1DMX.html", null ],
     [ "dmxpp::DMXAttribute", "dc/d56/structdmxpp_1_1DMXAttribute.html", null ],
     [ "dmxpp::DMXElement", "d4/d6d/structdmxpp_1_1DMXElement.html", null ],
@@ -10,25 +20,19 @@ var hierarchy =
     [ "dmxpp::Value::Element", "dc/d06/structdmxpp_1_1Value_1_1Element.html", null ],
     [ "dmxpp::Value::Invalid", "da/dee/structdmxpp_1_1Value_1_1Invalid.html", null ],
     [ "dmxpp::Value::Time", "d5/d19/structdmxpp_1_1Value_1_1Time.html", null ],
-    [ "fgdpp::FGD", "d7/d45/classfgdpp_1_1FGD.html", null ],
-    [ "fgdpp::FGD::AutoVisGroup", "d5/d38/structfgdpp_1_1FGD_1_1AutoVisGroup.html", null ],
-    [ "fgdpp::FGD::Entity", "d8/d96/structfgdpp_1_1FGD_1_1Entity.html", null ],
-    [ "fgdpp::FGD::Entity::ClassProperty", "d0/dfe/structfgdpp_1_1FGD_1_1Entity_1_1ClassProperty.html", null ],
-    [ "fgdpp::FGD::Entity::Field", "db/d07/structfgdpp_1_1FGD_1_1Entity_1_1Field.html", null ],
-    [ "fgdpp::FGD::Entity::FieldChoices", "d4/d95/structfgdpp_1_1FGD_1_1Entity_1_1FieldChoices.html", null ],
-    [ "fgdpp::FGD::Entity::FieldChoices::Choice", "d4/df1/structfgdpp_1_1FGD_1_1Entity_1_1FieldChoices_1_1Choice.html", null ],
-    [ "fgdpp::FGD::Entity::FieldFlags", "d3/d1c/structfgdpp_1_1FGD_1_1Entity_1_1FieldFlags.html", null ],
-    [ "fgdpp::FGD::Entity::FieldFlags::Flag", "d0/d27/structfgdpp_1_1FGD_1_1Entity_1_1FieldFlags_1_1Flag.html", null ],
-    [ "fgdpp::FGD::Entity::IO", "db/de2/structfgdpp_1_1FGD_1_1Entity_1_1IO.html", null ],
-    [ "fgdpp::FGDWriter", "d5/db1/classfgdpp_1_1FGDWriter.html", null ],
-    [ "fgdpp::FGDWriter::AutoVisGroupWriter", "d1/d08/classfgdpp_1_1FGDWriter_1_1AutoVisGroupWriter.html", null ],
-    [ "fgdpp::FGDWriter::EntityWriter", "d9/ddd/classfgdpp_1_1FGDWriter_1_1EntityWriter.html", null ],
-    [ "fgdpp::FGDWriter::EntityWriter::KeyValueChoicesWriter", "d7/daf/classfgdpp_1_1FGDWriter_1_1EntityWriter_1_1KeyValueChoicesWriter.html", null ],
-    [ "fgdpp::FGDWriter::EntityWriter::KeyValueFlagsWriter", "d0/d3b/classfgdpp_1_1FGDWriter_1_1EntityWriter_1_1KeyValueFlagsWriter.html", null ],
     [ "gamepp::GameInstance", "d2/dc0/classgamepp_1_1GameInstance.html", null ],
-    [ "kvpp::KV1Element", "da/daf/classkvpp_1_1KV1Element.html", [
-      [ "kvpp::KV1", "de/d0f/classkvpp_1_1KV1.html", null ]
+    [ "kvpp::KV1ElementBase< std::string, KV1ElementWritable< std::string > >", "de/d62/classkvpp_1_1KV1ElementBase.html", [
+      [ "kvpp::KV1ElementWritable< std::string >", "de/d75/classkvpp_1_1KV1ElementWritable.html", [
+        [ "kvpp::KV1Writer< S >", "d4/d43/classkvpp_1_1KV1Writer.html", null ]
+      ] ],
+      [ "kvpp::KV1ElementWritable< S >", "de/d75/classkvpp_1_1KV1ElementWritable.html", null ]
     ] ],
+    [ "kvpp::KV1ElementBase< std::string_view, KV1ElementReadable >", "de/d62/classkvpp_1_1KV1ElementBase.html", [
+      [ "kvpp::KV1ElementReadable", "d4/d2d/classkvpp_1_1KV1ElementReadable.html", [
+        [ "kvpp::KV1", "de/d0f/classkvpp_1_1KV1.html", null ]
+      ] ]
+    ] ],
+    [ "kvpp::KV1ElementBase< S, K >", "de/d62/classkvpp_1_1KV1ElementBase.html", null ],
     [ "sourcepp::math::Matrix< 3, 4 >", "d4/d4b/classsourcepp_1_1math_1_1Matrix.html", null ],
     [ "mdlpp::BakedModel", "de/d21/structmdlpp_1_1BakedModel.html", null ],
     [ "mdlpp::BakedModel::Mesh", "d2/d2f/structmdlpp_1_1BakedModel_1_1Mesh.html", null ],
@@ -67,6 +71,25 @@ var hierarchy =
       ] ]
     ] ],
     [ "steampp::Steam", "d9/d81/classsteampp_1_1Steam.html", null ],
+    [ "toolpp::CmdSeq", "d5/d62/classtoolpp_1_1CmdSeq.html", null ],
+    [ "toolpp::CmdSeq::Command", "d3/df6/structtoolpp_1_1CmdSeq_1_1Command.html", null ],
+    [ "toolpp::CmdSeq::Sequence", "da/d0f/structtoolpp_1_1CmdSeq_1_1Sequence.html", null ],
+    [ "toolpp::FGD", "d2/d4c/classtoolpp_1_1FGD.html", null ],
+    [ "toolpp::FGD::AutoVisGroup", "d0/dcf/structtoolpp_1_1FGD_1_1AutoVisGroup.html", null ],
+    [ "toolpp::FGD::Entity", "d8/dc3/structtoolpp_1_1FGD_1_1Entity.html", null ],
+    [ "toolpp::FGD::Entity::ClassProperty", "df/dd8/structtoolpp_1_1FGD_1_1Entity_1_1ClassProperty.html", null ],
+    [ "toolpp::FGD::Entity::Field", "d2/d9f/structtoolpp_1_1FGD_1_1Entity_1_1Field.html", null ],
+    [ "toolpp::FGD::Entity::FieldChoices", "d9/d29/structtoolpp_1_1FGD_1_1Entity_1_1FieldChoices.html", null ],
+    [ "toolpp::FGD::Entity::FieldChoices::Choice", "dd/d3e/structtoolpp_1_1FGD_1_1Entity_1_1FieldChoices_1_1Choice.html", null ],
+    [ "toolpp::FGD::Entity::FieldFlags", "d0/d54/structtoolpp_1_1FGD_1_1Entity_1_1FieldFlags.html", null ],
+    [ "toolpp::FGD::Entity::FieldFlags::Flag", "de/d58/structtoolpp_1_1FGD_1_1Entity_1_1FieldFlags_1_1Flag.html", null ],
+    [ "toolpp::FGD::Entity::IO", "de/dc0/structtoolpp_1_1FGD_1_1Entity_1_1IO.html", null ],
+    [ "toolpp::FGDWriter", "d5/d25/classtoolpp_1_1FGDWriter.html", null ],
+    [ "toolpp::FGDWriter::AutoVisGroupWriter", "d3/d68/classtoolpp_1_1FGDWriter_1_1AutoVisGroupWriter.html", null ],
+    [ "toolpp::FGDWriter::EntityWriter", "d4/da2/classtoolpp_1_1FGDWriter_1_1EntityWriter.html", null ],
+    [ "toolpp::FGDWriter::EntityWriter::KeyValueChoicesWriter", "db/d88/classtoolpp_1_1FGDWriter_1_1EntityWriter_1_1KeyValueChoicesWriter.html", null ],
+    [ "toolpp::FGDWriter::EntityWriter::KeyValueFlagsWriter", "d5/d18/classtoolpp_1_1FGDWriter_1_1EntityWriter_1_1KeyValueFlagsWriter.html", null ],
+    [ "vpkpp::BakeOptions", "d0/dff/structvpkpp_1_1BakeOptions.html", null ],
     [ "vpkpp::Entry", "d9/d6b/classvpkpp_1_1Entry.html", null ],
     [ "vpkpp::EntryOptions", "d6/d5b/structvpkpp_1_1EntryOptions.html", null ],
     [ "vpkpp::GCF::Block", "d4/d3e/structvpkpp_1_1GCF_1_1Block.html", null ],
@@ -97,7 +120,6 @@ var hierarchy =
         [ "vpkpp::BSP", "d2/da8/classvpkpp_1_1BSP.html", null ]
       ] ]
     ] ],
-    [ "vpkpp::PackFileOptions", "d5/db7/structvpkpp_1_1PackFileOptions.html", null ],
     [ "vpkpp::PCK::Header", "d5/da3/structvpkpp_1_1PCK_1_1Header.html", null ],
     [ "vpkpp::VPK::Footer2", "d5/dde/structvpkpp_1_1VPK_1_1Footer2.html", null ],
     [ "vpkpp::VPK::FreedChunk", "d9/de4/structvpkpp_1_1VPK_1_1FreedChunk.html", null ],

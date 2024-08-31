@@ -1,7 +1,17 @@
 var annotated_dup =
 [
     [ "bsppp", "dd/d11/namespacebsppp.html", [
-      [ "BSP", "d5/dba/classbsppp_1_1BSP.html", "d5/dba/classbsppp_1_1BSP" ]
+      [ "BSP", "d5/dba/classbsppp_1_1BSP.html", "d5/dba/classbsppp_1_1BSP" ],
+      [ "BSPPlane_v0", "d8/de4/structbsppp_1_1BSPPlane__v0.html", "d8/de4/structbsppp_1_1BSPPlane__v0" ],
+      [ "BSPTextureData_v0", "d1/d93/structbsppp_1_1BSPTextureData__v0.html", "d1/d93/structbsppp_1_1BSPTextureData__v0" ],
+      [ "BSPVertex_v0", "d2/d27/structbsppp_1_1BSPVertex__v0.html", "d2/d27/structbsppp_1_1BSPVertex__v0" ],
+      [ "BSPTextureInfo_v0", "d3/d0f/structbsppp_1_1BSPTextureInfo__v0.html", "d3/d0f/structbsppp_1_1BSPTextureInfo__v0" ],
+      [ "BSPFace_v1", "d6/d98/structbsppp_1_1BSPFace__v1.html", "d6/d98/structbsppp_1_1BSPFace__v1" ],
+      [ "BSPFace_v2", "d8/d85/structbsppp_1_1BSPFace__v2.html", "d8/d85/structbsppp_1_1BSPFace__v2" ],
+      [ "BSPEdge_v0", "d8/d16/structbsppp_1_1BSPEdge__v0.html", "d8/d16/structbsppp_1_1BSPEdge__v0" ],
+      [ "BSPEdge_v1", "dd/d95/structbsppp_1_1BSPEdge__v1.html", "dd/d95/structbsppp_1_1BSPEdge__v1" ],
+      [ "BSPSurfEdge_v0", "df/d2e/structbsppp_1_1BSPSurfEdge__v0.html", "df/d2e/structbsppp_1_1BSPSurfEdge__v0" ],
+      [ "BSPBrushModel_v0", "d3/db0/structbsppp_1_1BSPBrushModel__v0.html", "d3/db0/structbsppp_1_1BSPBrushModel__v0" ]
     ] ],
     [ "dmxpp", "d9/db0/namespacedmxpp.html", [
       [ "Value", "d7/d45/namespacedmxpp_1_1Value.html", [
@@ -14,16 +24,15 @@ var annotated_dup =
       [ "DMXAttribute", "dc/d56/structdmxpp_1_1DMXAttribute.html", "dc/d56/structdmxpp_1_1DMXAttribute" ],
       [ "DMXElement", "d4/d6d/structdmxpp_1_1DMXElement.html", "d4/d6d/structdmxpp_1_1DMXElement" ]
     ] ],
-    [ "fgdpp", "d3/dce/namespacefgdpp.html", [
-      [ "FGD", "d7/d45/classfgdpp_1_1FGD.html", "d7/d45/classfgdpp_1_1FGD" ],
-      [ "FGDWriter", "d5/db1/classfgdpp_1_1FGDWriter.html", "d5/db1/classfgdpp_1_1FGDWriter" ]
-    ] ],
     [ "gamepp", "de/d04/namespacegamepp.html", [
       [ "GameInstance", "d2/dc0/classgamepp_1_1GameInstance.html", "d2/dc0/classgamepp_1_1GameInstance" ]
     ] ],
     [ "kvpp", "d8/d57/namespacekvpp.html", [
-      [ "KV1Element", "da/daf/classkvpp_1_1KV1Element.html", "da/daf/classkvpp_1_1KV1Element" ],
-      [ "KV1", "de/d0f/classkvpp_1_1KV1.html", "de/d0f/classkvpp_1_1KV1" ]
+      [ "KV1ElementBase", "de/d62/classkvpp_1_1KV1ElementBase.html", "de/d62/classkvpp_1_1KV1ElementBase" ],
+      [ "KV1ElementReadable", "d4/d2d/classkvpp_1_1KV1ElementReadable.html", "d4/d2d/classkvpp_1_1KV1ElementReadable" ],
+      [ "KV1", "de/d0f/classkvpp_1_1KV1.html", "de/d0f/classkvpp_1_1KV1" ],
+      [ "KV1ElementWritable", "de/d75/classkvpp_1_1KV1ElementWritable.html", "de/d75/classkvpp_1_1KV1ElementWritable" ],
+      [ "KV1Writer", "d4/d43/classkvpp_1_1KV1Writer.html", "d4/d43/classkvpp_1_1KV1Writer" ]
     ] ],
     [ "mdlpp", "d1/d8e/namespacemdlpp.html", [
       [ "MDL", "d6/d3f/namespacemdlpp_1_1MDL.html", [
@@ -74,6 +83,11 @@ var annotated_dup =
     [ "steampp", "d7/d4d/namespacesteampp.html", [
       [ "Steam", "d9/d81/classsteampp_1_1Steam.html", "d9/d81/classsteampp_1_1Steam" ]
     ] ],
+    [ "toolpp", "d6/d4a/namespacetoolpp.html", [
+      [ "CmdSeq", "d5/d62/classtoolpp_1_1CmdSeq.html", "d5/d62/classtoolpp_1_1CmdSeq" ],
+      [ "FGD", "d2/d4c/classtoolpp_1_1FGD.html", "d2/d4c/classtoolpp_1_1FGD" ],
+      [ "FGDWriter", "d5/d25/classtoolpp_1_1FGDWriter.html", "d5/d25/classtoolpp_1_1FGDWriter" ]
+    ] ],
     [ "vpkpp", "d5/d29/namespacevpkpp.html", [
       [ "Entry", "d9/d6b/classvpkpp_1_1Entry.html", "d9/d6b/classvpkpp_1_1Entry" ],
       [ "BSP", "d2/da8/classvpkpp_1_1BSP.html", "d2/da8/classvpkpp_1_1BSP" ],
@@ -85,7 +99,7 @@ var annotated_dup =
       [ "VPK", "d5/d8b/classvpkpp_1_1VPK.html", "d5/d8b/classvpkpp_1_1VPK" ],
       [ "VPK_VTMB", "d4/ddb/classvpkpp_1_1VPK__VTMB.html", "d4/ddb/classvpkpp_1_1VPK__VTMB" ],
       [ "ZIP", "da/de7/classvpkpp_1_1ZIP.html", "da/de7/classvpkpp_1_1ZIP" ],
-      [ "PackFileOptions", "d5/db7/structvpkpp_1_1PackFileOptions.html", "d5/db7/structvpkpp_1_1PackFileOptions" ],
+      [ "BakeOptions", "d0/dff/structvpkpp_1_1BakeOptions.html", "d0/dff/structvpkpp_1_1BakeOptions" ],
       [ "EntryOptions", "d6/d5b/structvpkpp_1_1EntryOptions.html", "d6/d5b/structvpkpp_1_1EntryOptions" ],
       [ "PackFile", "d2/dd2/classvpkpp_1_1PackFile.html", "d2/dd2/classvpkpp_1_1PackFile" ],
       [ "PackFileReadOnly", "de/df6/classvpkpp_1_1PackFileReadOnly.html", "de/df6/classvpkpp_1_1PackFileReadOnly" ],
