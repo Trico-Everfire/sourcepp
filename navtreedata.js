@@ -58,6 +58,8 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -67,16 +69,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d1/d2d/ImageFormats_8h.html#aec3345feb8c8d1832efd60bd78ba336ca0e07e6cd02c0f8bb03574f25ea921e62",
-"d2/dd2/classvpkpp_1_1PackFile.html#a97fc43757442e6020f9c9721f5978196",
-"d4/daf/structsourcepp_1_1math_1_1QuatCompressed64.html#aaea35c5709bee90f5df0bb78e5b06a80",
-"d5/d61/namespacevtfpp_1_1ImageConversion.html#a69415c9957b5d27602eeb20f862d26bea8ca9bf69e1cc136c1a531cbd13e0759d",
-"d5/dd3/structmdlpp_1_1VTX_1_1VTX.html",
-"d7/d45/namespacedmxpp_1_1Value.html#a6dd9b9d48823a78948183ff4a37949af",
-"d8/df2/classvtfpp_1_1VTF.html#aa203515ee52f1d82378a4bd97823a51aa60478e6bd53f9e88803c92965eac705e",
-"da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a64efd9bcf7b83f22fe9796967255e103",
-"dd/d11/namespacebsppp.html#a9cb52214dd23962b3ae112be2b95e2d0a9bd93fb90d99295d942dae95a82ddb39",
-"df/d6a/Generic_8h_source.html"
+"d1/d2d/ImageFormats_8h.html#acc53a7285be1b23a4cc06d28cee7f9e2",
+"d2/dd2/classvpkpp_1_1PackFile.html#a51bfbd2aec9a3a0c37d800058adf5db7",
+"d4/d5b/structvtfpp_1_1ImagePixel_1_1RGBA1010102.html#a055ff18f9728d5b189d60b9de0784da5",
+"d5/d60/bsppp_8h.html#a9cb52214dd23962b3ae112be2b95e2d0acaa9013358c2118c0253e71d4e2b3520",
+"d5/dba/classbsppp_1_1BSP.html#a08ba76ed578a2a90bc58c8fa8b8a123f",
+"d6/dbe/Vector_8h.html#aa6ef5d47556a7a364114c793ea56a0ab",
+"d8/df2/classvtfpp_1_1VTF.html#a4998bea1f7a756450f35bda657b23b8e",
+"d9/dba/String_8h.html#ad1fec827a88b6a9fbfc14ac6ec37d78b",
+"dc/d30/structmdlpp_1_1VVD_1_1Vertex.html#a7455d40b7678e7cb277d95a4e7465ead",
+"de/d62/classkvpp_1_1KV1ElementBase.html#a8dc08a4c69228df779d2a742a10e1186",
+"functions_rela.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
