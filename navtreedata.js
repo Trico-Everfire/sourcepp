@@ -28,8 +28,9 @@ var NAVTREE =
     [ "Cache Generation Steps", "dc/d45/md_src_steampp_cache_README.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Included Libraries", "index.html#autotoc_md0", null ],
-      [ "Special Thanks", "index.html#autotoc_md1", null ],
-      [ "Gallery", "index.html#autotoc_md2", null ],
+      [ "Wrappers", "index.html#autotoc_md1", null ],
+      [ "Special Thanks", "index.html#autotoc_md2", null ],
+      [ "Gallery", "index.html#autotoc_md3", null ],
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
@@ -39,6 +40,7 @@ var NAVTREE =
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
+    [ "Concepts", "concepts.html", "concepts" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -69,16 +71,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d1/d2d/ImageFormats_8h.html#aec3345feb8c8d1832efd60bd78ba336cab5dbc9955a7992b2f2b4986c8f09afe9",
-"d2/dd2/classvpkpp_1_1PackFile.html#ac84a870524760acef53ced438ac17601",
-"d4/dd3/VFONT_8h.html#a858f9902628a93a1e43bee6dc9b8784f",
-"d5/d61/namespacevtfpp_1_1ImageConversion.html#a9008d2944fc178ec39a2a406536dc3ccae5514cd16d3c890918248a4424426801",
-"d5/dd2/FS_8h.html#ab41ce0a38aed111d34806b0e77640e33",
-"d7/d6a/RSA_8h.html#ab6e183f3d207cc9c44ca0247ededd583",
-"d8/df2/classvtfpp_1_1VTF.html#aa80c768c2c949e254f335218c2650e5a",
-"da/d0f/structtoolpp_1_1CmdSeq_1_1Sequence.html",
-"dd/d11/namespacebsppp.html#a9cb52214dd23962b3ae112be2b95e2d0a4d8e4ee261c67bdf1d36713c50efb0f7",
-"de/d90/namespacevtfpp.html#aec3345feb8c8d1832efd60bd78ba336cafb6bc1db823ed8912946ddec2cc408bd"
+"d0/de9/structvtfpp_1_1ImagePixel_1_1RGBA16161616F.html",
+"d1/dbd/structmdlpp_1_1Movement.html#adea4aa6b66b3e1c44eca0f384a6e7a5b",
+"d2/dd2/classvpkpp_1_1PackFile.html#a4bb832d80b1822122a2fde5a67ffc847",
+"d3/d80/structvtfpp_1_1Resource.html#a9a20fce67f256aafbdeaf6f99a094ba8",
+"d4/da2/classtoolpp_1_1FGDWriter_1_1EntityWriter.html#ae0ba447f28fd68dda866322eff2e1b64",
+"d5/d60/bsppp_8h.html#a9cb52214dd23962b3ae112be2b95e2d0aaa3ea5eacf0caaf1ea52935c626440a8",
+"d5/d8e/Value_8h.html#af5d3dcc8a6e393d5fd5384c83692ab1ea88be69b0577a14f4fa3bbfa0ff17a41d",
+"d5/dd7/VICE_8h.html#a11552e7e0cd868b00d9d1b83875cb3e8",
+"d6/dae/vpkpp_8h.html",
+"d8/dc3/structtoolpp_1_1FGD_1_1Entity.html#a9efbc70f39df66eda834a51448d83f08",
+"d8/df2/classvtfpp_1_1VTF.html#aa85c2aa48d036ef8de1e4ae3b9812e2b",
+"d9/dba/String_8h.html#a2921eb99eb12a40ad6d74fd6072e1f23",
+"db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a1758f1115310feea3dbc7c1738c994a9",
+"dd/d11/namespacebsppp.html#a9cb52214dd23962b3ae112be2b95e2d0a4f755e27ed464f26858b790983f13571",
+"de/d75/classkvpp_1_1KV1ElementWritable.html",
+"dir_49e56c817e5e54854c35e136979f97ca.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
