@@ -1,47 +1,47 @@
 <map id="src/vpkpp/format/VPK.cpp" name="src/vpkpp/format/VPK.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="1072,5,1263,31"/>
-<area shape="rect" id="node2" href="$d3/d5a/VPK_8h.html" title=" " alt="" coords="1930,152,2082,177"/>
-<area shape="rect" id="node27" title=" " alt="" coords="626,79,687,104"/>
-<area shape="rect" id="node28" title=" " alt="" coords="711,79,802,104"/>
-<area shape="rect" id="node29" title=" " alt="" coords="827,79,951,104"/>
-<area shape="rect" id="node30" title=" " alt="" coords="975,79,1079,104"/>
-<area shape="rect" id="node31" href="$dd/d3b/kvpp_8h.html" title=" " alt="" coords="467,152,569,177"/>
-<area shape="rect" id="node36" href="$d5/dd2/FS_8h.html" title=" " alt="" coords="793,299,905,324"/>
-<area shape="rect" id="node38" href="$d9/dba/String_8h.html" title=" " alt="" coords="532,299,667,324"/>
-<area shape="rect" id="node40" href="$d6/d27/CRC32_8h.html" title=" " alt="" coords="1429,299,1615,324"/>
-<area shape="rect" id="node41" href="$de/ddd/MD5_8h.html" title=" " alt="" coords="1731,299,1903,324"/>
-<area shape="rect" id="node42" href="$d7/d6a/RSA_8h.html" title=" " alt="" coords="1184,299,1353,324"/>
-<area shape="rect" id="node44" href="$dd/d05/crypto_2String_8h.html" title=" " alt="" coords="980,299,1160,324"/>
-<area shape="rect" id="node45" href="$dd/d63/FPX_8h.html" title=" " alt="" coords="1713,79,1864,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="2141,372,2197,397"/>
-<area shape="rect" id="node4" href="$d3/df4/PackFile_8h.html" title=" " alt="" coords="1974,225,2073,251"/>
-<area shape="rect" id="node5" title=" " alt="" coords="1927,299,2013,324"/>
-<area shape="rect" id="node6" title=" " alt="" coords="2038,299,2115,324"/>
-<area shape="rect" id="node7" title=" " alt="" coords="2139,299,2214,324"/>
-<area shape="rect" id="node8" title=" " alt="" coords="906,372,965,397"/>
-<area shape="rect" id="node9" title=" " alt="" coords="660,372,757,397"/>
-<area shape="rect" id="node10" title=" " alt="" coords="331,372,455,397"/>
-<area shape="rect" id="node11" title=" " alt="" coords="1172,372,1235,397"/>
-<area shape="rect" id="node12" href="$df/d0a/Macros_8h.html" title=" " alt="" coords="2574,372,2718,397"/>
-<area shape="rect" id="node14" title=" " alt="" coords="2238,299,2358,324"/>
-<area shape="rect" id="node15" href="$d4/d08/Attribute_8h.html" title=" " alt="" coords="2683,299,2774,324"/>
-<area shape="rect" id="node16" href="$d4/d42/Entry_8h.html" title=" " alt="" coords="1639,299,1706,324"/>
-<area shape="rect" id="node25" href="$d5/d76/Options_8h.html" title=" " alt="" coords="2524,299,2608,324"/>
-<area shape="rect" id="node26" href="$d6/da8/PackFileType_8h.html" title=" " alt="" coords="2382,299,2499,324"/>
-<area shape="rect" id="node13" title=" " alt="" coords="2179,445,2271,471"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1355,372,1425,397"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1639,372,1707,397"/>
-<area shape="rect" id="node19" href="$db/d8a/Math_8h.html" title=" " alt="" coords="1470,372,1601,397"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1556,445,1595,471"/>
-<area shape="rect" id="node21" title=" " alt="" coords="477,445,557,471"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1619,445,1681,471"/>
-<area shape="rect" id="node23" title=" " alt="" coords="1366,445,1433,471"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1457,445,1531,471"/>
-<area shape="rect" id="node32" href="$d3/d10/KV1_8h.html" title=" " alt="" coords="464,225,524,251"/>
-<area shape="rect" id="node33" title=" " alt="" coords="41,299,161,324"/>
-<area shape="rect" id="node34" href="$d6/d35/Text_8h.html" title=" " alt="" coords="185,299,355,324"/>
-<area shape="rect" id="node35" title=" " alt="" coords="220,372,307,397"/>
-<area shape="rect" id="node37" title=" " alt="" coords="822,372,875,397"/>
-<area shape="rect" id="node39" title=" " alt="" coords="555,372,636,397"/>
-<area shape="rect" id="node43" title=" " alt="" coords="1259,372,1313,397"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1394,5,1585,31"/>
+<area shape="rect" id="node2" href="$d3/d5a/VPK_8h.html" title=" " alt="" coords="805,152,957,177"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1628,79,1689,104"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1713,79,1804,104"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1829,79,1953,104"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1977,79,2081,104"/>
+<area shape="rect" id="node31" href="$dd/d3b/kvpp_8h.html" title=" " alt="" coords="1793,152,1895,177"/>
+<area shape="rect" id="node36" href="$d5/dd2/FS_8h.html" title=" " alt="" coords="1548,299,1660,324"/>
+<area shape="rect" id="node38" href="$d9/dba/String_8h.html" title=" " alt="" coords="1991,299,2126,324"/>
+<area shape="rect" id="node40" href="$d6/d27/CRC32_8h.html" title=" " alt="" coords="1042,299,1227,324"/>
+<area shape="rect" id="node41" href="$de/ddd/MD5_8h.html" title=" " alt="" coords="397,299,569,324"/>
+<area shape="rect" id="node42" href="$d7/d6a/RSA_8h.html" title=" " alt="" coords="1303,299,1473,324"/>
+<area shape="rect" id="node44" href="$dd/d05/crypto_2String_8h.html" title=" " alt="" coords="1685,299,1865,324"/>
+<area shape="rect" id="node45" href="$dd/d63/FPX_8h.html" title=" " alt="" coords="1057,79,1207,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="29,372,85,397"/>
+<area shape="rect" id="node4" href="$d3/df4/PackFile_8h.html" title=" " alt="" coords="817,225,916,251"/>
+<area shape="rect" id="node5" title=" " alt="" coords="695,299,782,324"/>
+<area shape="rect" id="node6" title=" " alt="" coords="593,299,671,324"/>
+<area shape="rect" id="node7" title=" " alt="" coords="139,299,213,324"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1745,372,1804,397"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2106,372,2203,397"/>
+<area shape="rect" id="node10" title=" " alt="" coords="2285,372,2409,397"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1343,372,1406,397"/>
+<area shape="rect" id="node12" href="$df/d0a/Macros_8h.html" title=" " alt="" coords="179,372,323,397"/>
+<area shape="rect" id="node14" title=" " alt="" coords="807,299,927,324"/>
+<area shape="rect" id="node15" href="$d4/d08/Attribute_8h.html" title=" " alt="" coords="24,299,115,324"/>
+<area shape="rect" id="node16" href="$d4/d42/Entry_8h.html" title=" " alt="" coords="951,299,1017,324"/>
+<area shape="rect" id="node26" href="$d5/d76/Options_8h.html" title=" " alt="" coords="289,299,373,324"/>
+<area shape="rect" id="node13" title=" " alt="" coords="482,445,574,471"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1237,372,1307,397"/>
+<area shape="rect" id="node18" title=" " alt="" coords="950,372,1018,397"/>
+<area shape="rect" id="node19" href="$db/d8a/Math_8h.html" title=" " alt="" coords="1056,372,1187,397"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1183,445,1222,471"/>
+<area shape="rect" id="node21" title=" " alt="" coords="2023,445,2103,471"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1246,445,1309,471"/>
+<area shape="rect" id="node23" title=" " alt="" coords="889,445,956,471"/>
+<area shape="rect" id="node24" title=" " alt="" coords="981,445,1059,471"/>
+<area shape="rect" id="node25" title=" " alt="" coords="1084,445,1159,471"/>
+<area shape="rect" id="node32" href="$d3/d10/KV1_8h.html" title=" " alt="" coords="2029,225,2089,251"/>
+<area shape="rect" id="node33" title=" " alt="" coords="2303,299,2423,324"/>
+<area shape="rect" id="node34" href="$d6/d35/Text_8h.html" title=" " alt="" coords="2447,299,2617,324"/>
+<area shape="rect" id="node35" title=" " alt="" coords="2489,372,2575,397"/>
+<area shape="rect" id="node37" title=" " alt="" coords="1623,372,1676,397"/>
+<area shape="rect" id="node39" title=" " alt="" coords="1943,372,2025,397"/>
+<area shape="rect" id="node43" title=" " alt="" coords="1430,372,1485,397"/>
 </map>
