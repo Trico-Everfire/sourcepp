@@ -71,22 +71,27 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d0/de2/structmdlpp_1_1VVD_1_1VVD.html#aa7a4c4279ae3f82368fe89e6886e3c93",
-"d1/dbd/structmdlpp_1_1Movement.html",
-"d2/dd2/classvpkpp_1_1PackFile.html#a463c6aa921a769b79952de90e458190b",
-"d3/d80/structvtfpp_1_1Resource.html#a4f1603eddf872798fc306fb651f1f1ba",
-"d4/da2/classtoolpp_1_1FGDWriter_1_1EntityWriter.html#a8aadae4cac730f53929b802521b200bf",
-"d5/d60/bsppp_8h.html#a9cb52214dd23962b3ae112be2b95e2d0aaa3ea5eacf0caaf1ea52935c626440a8",
-"d5/d8e/Value_8h.html#af5d3dcc8a6e393d5fd5384c83692ab1ea53f93baa3057821107c750323892fa92",
-"d5/dd2/FS_8h.html",
-"d6/d98/structbsppp_1_1BSPFace__v1.html#a7e2854487a06dee462929bd9d22b00e9",
-"d8/d85/structbsppp_1_1BSPFace__v2.html#aa9c8f862119edc2e446bfa86796a08eb",
-"d8/df2/classvtfpp_1_1VTF.html#aa203515ee52f1d82378a4bd97823a51aaae8325bd3738b0e3ee96c73288e165f4",
-"d9/d8a/structvtfpp_1_1ImagePixel_1_1BGRX5551.html#a567e5eb02f2894d614af0028d56be619",
-"da/de7/classvpkpp_1_1ZIP.html#a1bc1ecd6e1a7b9585fa4f36e92ba45b3",
+"d0/dc9/structvtfpp_1_1ImagePixel_1_1RGBX8888.html#a5af01d55152e03c1fe1e2790659ef7ba",
+"d1/d93/structbsppp_1_1BSPTextureData__v0.html",
+"d2/dbf/structmdlpp_1_1MDL_1_1Bone.html#abda69c4048735c2cab558c13de975b09",
+"d2/dd2/classvpkpp_1_1PackFile.html#acd54146ca55df688b06b20926a636c66",
+"d3/d83/structvtfpp_1_1ImagePixel_1_1ABGR8888.html#a37055f429e28206d037303de543bca0a",
+"d4/d6d/structdmxpp_1_1DMXElement.html#a51209d6be3a3936744b882bafe7b63db",
+"d5/d29/namespacevpkpp.html#ae034a158f88b27daeb947b167a806182a2c7a9f26cee915ace4dfd40250ac57eb",
+"d5/d8e/Value_8h.html#af5d3dcc8a6e393d5fd5384c83692ab1ea99287aff99134dc7047dee3ffdbe3600",
+"d5/dba/classbsppp_1_1BSP.html#a79565eac09e3a56bf2417e35905dc753",
+"d6/d2c/classvpkpp_1_1GMA.html#a3d3b1dc610cbcdfe99c909ead844d415",
+"d7/d75/namespacesourcepp_1_1parser_1_1text.html#aa940a6db105e64e5948bb6d7d692a346",
+"d8/d85/structbsppp_1_1BSPFace__v2.html",
+"d8/df2/classvtfpp_1_1VTF.html#a969bd3e490c7eff6ca12fbcd15b4aa4c",
+"d9/d12/classsndpp_1_1XWV.html#ab979db30fdc9dae83e542b415203eb8e",
+"d9/de4/structvpkpp_1_1VPK_1_1FreedChunk.html",
+"db/d04/structvtfpp_1_1SHT_1_1Sequence_1_1Frame_1_1Bounds.html#a15491e115248836eda1f62b7513ceb82",
 "dc/db5/structvpkpp_1_1GCF_1_1ChecksumMapHeader.html#a748183408ae4705c3132c874727e99af",
-"de/d58/structtoolpp_1_1FGD_1_1Entity_1_1FieldFlags_1_1Flag.html#a75985e2bb888a7ba052e0683e3e1f550",
-"df/d32/classvtfpp_1_1PPL.html#a896a7c14ac7ff900379ee191bffd64d0"
+"dd/da7/EngineGoldSrc_8inl_source.html",
+"de/d9d/structsndpp_1_1WAV_1_1ChunkSMPL.html#a552a54b3a1634dacd07331fc2e2f1d94",
+"df/dc5/classsndpp_1_1WAV.html#a60edaec25b2e1b65cc529126e2ffcb69ac3c747073c2d218cfa6df39de0447e7e",
+"globals_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

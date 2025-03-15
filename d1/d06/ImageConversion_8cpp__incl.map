@@ -1,31 +1,32 @@
 <map id="src/vtfpp/ImageConversion.cpp" name="src/vtfpp/ImageConversion.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="1117,5,1341,31"/>
-<area shape="rect" id="node2" href="$da/d01/ImageConversion_8h.html" title=" " alt="" coords="283,79,469,104"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,152,59,177"/>
-<area shape="rect" id="node12" href="$db/d8a/Math_8h.html" title=" " alt="" coords="744,225,875,251"/>
-<area shape="rect" id="node13" title=" " alt="" coords="1361,299,1399,324"/>
-<area shape="rect" id="node18" title=" " alt="" coords="844,79,929,104"/>
-<area shape="rect" id="node19" title=" " alt="" coords="954,79,1019,104"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1044,79,1111,104"/>
-<area shape="rect" id="node21" title=" " alt="" coords="1135,79,1212,104"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1237,79,1334,104"/>
-<area shape="rect" id="node23" title=" " alt="" coords="1358,79,1482,104"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1506,79,1646,104"/>
-<area shape="rect" id="node25" href="$df/d0a/Macros_8h.html" title=" " alt="" coords="576,225,720,251"/>
-<area shape="rect" id="node26" title=" " alt="" coords="1722,79,1825,104"/>
-<area shape="rect" id="node27" title=" " alt="" coords="1849,79,2005,104"/>
-<area shape="rect" id="node28" title=" " alt="" coords="2029,79,2171,104"/>
-<area shape="rect" id="node29" title=" " alt="" coords="2195,79,2274,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="511,152,567,177"/>
-<area shape="rect" id="node4" title=" " alt="" coords="349,299,429,324"/>
-<area shape="rect" id="node5" title=" " alt="" coords="83,152,154,177"/>
-<area shape="rect" id="node7" title=" " alt="" coords="178,152,241,177"/>
-<area shape="rect" id="node8" title=" " alt="" coords="316,152,436,177"/>
-<area shape="rect" id="node9" href="$d7/dd4/Templates_8h.html" title=" " alt="" coords="387,225,551,251"/>
-<area shape="rect" id="node11" href="$d1/d2d/ImageFormats_8h.html" title=" " alt="" coords="591,152,719,177"/>
-<area shape="rect" id="node10" title=" " alt="" coords="562,299,654,324"/>
-<area shape="rect" id="node14" title=" " alt="" coords="778,299,841,324"/>
-<area shape="rect" id="node15" title=" " alt="" coords="865,299,932,324"/>
-<area shape="rect" id="node16" title=" " alt="" coords="957,299,1035,324"/>
-<area shape="rect" id="node17" title=" " alt="" coords="679,299,753,324"/>
+<area shape="rect" id="node1" title=" " alt="" coords="714,5,938,31"/>
+<area shape="rect" id="node2" href="$da/d01/ImageConversion_8h.html" title=" " alt="" coords="107,79,294,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="50,152,103,177"/>
+<area shape="rect" id="node13" title=" " alt="" coords="5,299,44,324"/>
+<area shape="rect" id="node18" title=" " alt="" coords="318,79,403,104"/>
+<area shape="rect" id="node19" title=" " alt="" coords="428,79,493,104"/>
+<area shape="rect" id="node20" title=" " alt="" coords="518,79,585,104"/>
+<area shape="rect" id="node21" title=" " alt="" coords="609,79,686,104"/>
+<area shape="rect" id="node22" title=" " alt="" coords="711,79,808,104"/>
+<area shape="rect" id="node23" title=" " alt="" coords="832,79,956,104"/>
+<area shape="rect" id="node24" title=" " alt="" coords="980,79,1120,104"/>
+<area shape="rect" id="node25" href="$df/d0a/Macros_8h.html" title=" " alt="" coords="1017,225,1161,251"/>
+<area shape="rect" id="node26" href="$d3/d48/MathExtended_8h.html" title=" " alt="" coords="1144,79,1335,104"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1411,79,1513,104"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1537,79,1693,104"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1717,79,1860,104"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1884,79,1963,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="885,152,941,177"/>
+<area shape="rect" id="node4" title=" " alt="" coords="79,299,159,324"/>
+<area shape="rect" id="node5" title=" " alt="" coords="684,152,755,177"/>
+<area shape="rect" id="node7" title=" " alt="" coords="331,152,393,177"/>
+<area shape="rect" id="node8" title=" " alt="" coords="418,152,538,177"/>
+<area shape="rect" id="node9" href="$d7/dd4/Templates_8h.html" title=" " alt="" coords="519,225,683,251"/>
+<area shape="rect" id="node11" href="$d1/d2d/ImageFormats_8h.html" title=" " alt="" coords="178,152,306,177"/>
+<area shape="rect" id="node10" title=" " alt="" coords="564,299,656,324"/>
+<area shape="rect" id="node12" href="$db/d8a/Math_8h.html" title=" " alt="" coords="249,225,379,251"/>
+<area shape="rect" id="node14" title=" " alt="" coords="477,299,540,324"/>
+<area shape="rect" id="node15" title=" " alt="" coords="183,299,250,324"/>
+<area shape="rect" id="node16" title=" " alt="" coords="275,299,353,324"/>
+<area shape="rect" id="node17" title=" " alt="" coords="378,299,453,324"/>
 </map>
