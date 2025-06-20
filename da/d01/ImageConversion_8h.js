@@ -37,9 +37,11 @@ var ImageConversion_8h =
     [ "FileFormat", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409", [
       [ "DEFAULT", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a5b39c8b553c821e7cddc6da64b5bd2ee", null ],
       [ "PNG", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a55505ba281b015ec31f03ccb151b2a34", null ],
-      [ "JPEG", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a907e06a16862d82ca6907a28a68d0ad6", null ],
+      [ "JPG", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a92769fe7c40229f4301d6125e0a9e928", null ],
       [ "BMP", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409aa5d5ca1447586e23dc011f8c0cc0a6db", null ],
       [ "TGA", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a64efd9bcf7b83f22fe9796967255e103", null ],
+      [ "WEBP", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409ab8dbf614b2c3a603c8c8c723a3f6eb7a", null ],
+      [ "QOI", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a66afb022805d2723402536fa3f58f36c", null ],
       [ "HDR", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a6cad826248cd3f4e93da71e7b49928e3", null ],
       [ "EXR", "da/d01/ImageConversion_8h.html#ac86b05f9f4f7148b3a4ea53c6bfd0409aeb63de47b8691d315fefa05620191725", null ]
     ] ],
@@ -57,7 +59,8 @@ var ImageConversion_8h =
       [ "CATMULL_ROM", "da/d01/ImageConversion_8h.html#a69415c9957b5d27602eeb20f862d26bea2fea817d651a817150818eaddc366d20", null ],
       [ "MITCHELL", "da/d01/ImageConversion_8h.html#a69415c9957b5d27602eeb20f862d26bea8ca9bf69e1cc136c1a531cbd13e0759d", null ],
       [ "POINT_SAMPLE", "da/d01/ImageConversion_8h.html#a69415c9957b5d27602eeb20f862d26bea4e3f33496451c375be5947e7c1fbd3ea", null ],
-      [ "KAISER", "da/d01/ImageConversion_8h.html#a69415c9957b5d27602eeb20f862d26bea9b49d8a6d505b416c90acf00e67acc83", null ]
+      [ "KAISER", "da/d01/ImageConversion_8h.html#a69415c9957b5d27602eeb20f862d26bea9b49d8a6d505b416c90acf00e67acc83", null ],
+      [ "NICE", "da/d01/ImageConversion_8h.html#a69415c9957b5d27602eeb20f862d26bea99df5bd357117615d75315f590990b3a", null ]
     ] ],
     [ "ResizeMethod", "da/d01/ImageConversion_8h.html#a9008d2944fc178ec39a2a406536dc3cc", [
       [ "NONE", "da/d01/ImageConversion_8h.html#a9008d2944fc178ec39a2a406536dc3ccab50339a10e1de285ac99d4c3990b8693", null ],
@@ -65,7 +68,6 @@ var ImageConversion_8h =
       [ "POWER_OF_TWO_SMALLER", "da/d01/ImageConversion_8h.html#a9008d2944fc178ec39a2a406536dc3ccae5514cd16d3c890918248a4424426801", null ],
       [ "POWER_OF_TWO_NEAREST", "da/d01/ImageConversion_8h.html#a9008d2944fc178ec39a2a406536dc3cca6226c6d508bb91cbae45d6587a730d35", null ]
     ] ],
-    [ "applyChannelToImageData", "da/d01/ImageConversion_8h.html#afa611e565a510988372aeb5ba3de37b0", null ],
     [ "convertFileToImageData", "da/d01/ImageConversion_8h.html#a0e35b062eaaf17c3235b7fb03b05e9bf", null ],
     [ "convertHDRIToCubeMap", "da/d01/ImageConversion_8h.html#a30fb0fa055a416e7f1642b99b04a090a", null ],
     [ "convertImageDataToFile", "da/d01/ImageConversion_8h.html#a1bace17a2f4640e7f8b3de9655269a8e", null ],
@@ -73,8 +75,10 @@ var ImageConversion_8h =
     [ "convertSeveralImageDataToFormat", "da/d01/ImageConversion_8h.html#aea795449a42d2076a8bb795d37faaec9", null ],
     [ "cropImageData", "da/d01/ImageConversion_8h.html#ac7cd00a5275611b373c7b7651d0d5a39", null ],
     [ "extractChannelFromImageData", "da/d01/ImageConversion_8h.html#aad3b3ca83929b12ec4abad257d5f1648", null ],
+    [ "gammaCorrectImageData", "da/d01/ImageConversion_8h.html#a53a8e1cf34ccf960a200739a6a93c3e0", null ],
     [ "getDefaultFileFormatForImageFormat", "da/d01/ImageConversion_8h.html#a6bbe3db800f111c09ce579e0b9d4a37e", null ],
     [ "getResizedDim", "da/d01/ImageConversion_8h.html#a440840aa87de2dc367add665f674b365", null ],
+    [ "invertGreenChannelForImageData", "da/d01/ImageConversion_8h.html#aeec89cbbd5eba9056520d45bd555a252", null ],
     [ "resizeImageData", "da/d01/ImageConversion_8h.html#afcbc2ecd898c6e46a52535fa62494c8d", null ],
     [ "resizeImageDataStrict", "da/d01/ImageConversion_8h.html#aec2b00461a0a8b11227ed921a1996dcf", null ],
     [ "setResizedDims", "da/d01/ImageConversion_8h.html#a2c8bc6e0d781ad7eb30294063a7da865", null ],

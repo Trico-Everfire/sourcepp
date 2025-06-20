@@ -274,12 +274,15 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ac86b05f9f4f7148b3a4ea53c6bfd0409"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409">vtfpp::ImageConversion::FileFormat</a> { <br />
 &#160;&#160;<a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a5b39c8b553c821e7cddc6da64b5bd2ee">vtfpp::ImageConversion::DEFAULT</a>
 , <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a55505ba281b015ec31f03ccb151b2a34">vtfpp::ImageConversion::PNG</a>
-, <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a907e06a16862d82ca6907a28a68d0ad6">vtfpp::ImageConversion::JPEG</a>
+, <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a92769fe7c40229f4301d6125e0a9e928">vtfpp::ImageConversion::JPG</a>
 , <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409aa5d5ca1447586e23dc011f8c0cc0a6db">vtfpp::ImageConversion::BMP</a>
 , <br />
 &#160;&#160;<a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a64efd9bcf7b83f22fe9796967255e103">vtfpp::ImageConversion::TGA</a>
+, <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409ab8dbf614b2c3a603c8c8c723a3f6eb7a">vtfpp::ImageConversion::WEBP</a>
+, <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a66afb022805d2723402536fa3f58f36c">vtfpp::ImageConversion::QOI</a>
 , <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a6cad826248cd3f4e93da71e7b49928e3">vtfpp::ImageConversion::HDR</a>
-, <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409aeb63de47b8691d315fefa05620191725">vtfpp::ImageConversion::EXR</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409aeb63de47b8691d315fefa05620191725">vtfpp::ImageConversion::EXR</a>
 <br />
  }</td></tr>
 <tr class="separator:ac86b05f9f4f7148b3a4ea53c6bfd0409"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,6 +302,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#a69415c9957b5d27602eeb20f862d26bea8ca9bf69e1cc136c1a531cbd13e0759d">vtfpp::ImageConversion::MITCHELL</a>
 , <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#a69415c9957b5d27602eeb20f862d26bea4e3f33496451c375be5947e7c1fbd3ea">vtfpp::ImageConversion::POINT_SAMPLE</a>
 , <a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#a69415c9957b5d27602eeb20f862d26bea9b49d8a6d505b416c90acf00e67acc83">vtfpp::ImageConversion::KAISER</a> = 100
+, <br />
+&#160;&#160;<a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#a69415c9957b5d27602eeb20f862d26bea99df5bd357117615d75315f590990b3a">vtfpp::ImageConversion::NICE</a> = 101
 <br />
  }</td></tr>
 <tr class="separator:a69415c9957b5d27602eeb20f862d26be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -433,14 +438,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7cd00a5275611b373c7b7651d0d5a39"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#ac7cd00a5275611b373c7b7651d0d5a39">vtfpp::ImageConversion::cropImageData</a> (std::span&lt; const std::byte &gt; imageData, <a class="el" href="../../de/d90/namespacevtfpp.html#aec3345feb8c8d1832efd60bd78ba336c">ImageFormat</a> format, uint16_t width, uint16_t newWidth, uint16_t xOffset, uint16_t height, uint16_t newHeight, uint16_t yOffset)</td></tr>
 <tr class="memdesc:ac7cd00a5275611b373c7b7651d0d5a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crops the given image to the new dimensions. If the image format is compressed it will be converted to its container format before the crop, and converted back before returning.  <br /></td></tr>
 <tr class="separator:ac7cd00a5275611b373c7b7651d0d5a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a8e1cf34ccf960a200739a6a93c3e0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#a53a8e1cf34ccf960a200739a6a93c3e0">vtfpp::ImageConversion::gammaCorrectImageData</a> (std::span&lt; const std::byte &gt; imageData, <a class="el" href="../../de/d90/namespacevtfpp.html#aec3345feb8c8d1832efd60bd78ba336c">ImageFormat</a> format, uint16_t width, uint16_t height, float gamma)</td></tr>
+<tr class="memdesc:a53a8e1cf34ccf960a200739a6a93c3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform gamma correction on the given image data. Will not perform gamma correction if the input image format is large, console, P8, A8, UV88, UVLX8888, or UVWQ8888.  <br /></td></tr>
+<tr class="separator:a53a8e1cf34ccf960a200739a6a93c3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec89cbbd5eba9056520d45bd555a252"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#aeec89cbbd5eba9056520d45bd555a252">vtfpp::ImageConversion::invertGreenChannelForImageData</a> (std::span&lt; const std::byte &gt; imageData, <a class="el" href="../../de/d90/namespacevtfpp.html#aec3345feb8c8d1832efd60bd78ba336c">ImageFormat</a> format, uint16_t width, uint16_t height)</td></tr>
+<tr class="memdesc:aeec89cbbd5eba9056520d45bd555a252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the green channel. Meant for converting normal maps between OpenGL and DirectX formats.  <br /></td></tr>
+<tr class="separator:aeec89cbbd5eba9056520d45bd555a252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad3b3ca83929b12ec4abad257d5f1648"><td class="memTemplParams" colspan="2">template&lt;ImagePixel::PixelType P&gt; </td></tr>
 <tr class="memitem:aad3b3ca83929b12ec4abad257d5f1648"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::byte &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#aad3b3ca83929b12ec4abad257d5f1648">vtfpp::ImageConversion::extractChannelFromImageData</a> (std::span&lt; const std::byte &gt; imageData, auto P::*channel)</td></tr>
 <tr class="memdesc:aad3b3ca83929b12ec4abad257d5f1648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a single channel from the given image data.  <br /></td></tr>
 <tr class="separator:aad3b3ca83929b12ec4abad257d5f1648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa611e565a510988372aeb5ba3de37b0"><td class="memTemplParams" colspan="2">template&lt;ImagePixel::PixelType P&gt; </td></tr>
-<tr class="memitem:afa611e565a510988372aeb5ba3de37b0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d61/namespacevtfpp_1_1ImageConversion.html#afa611e565a510988372aeb5ba3de37b0">vtfpp::ImageConversion::applyChannelToImageData</a> (std::span&lt; std::byte &gt; imageData, std::span&lt; const std::byte &gt; channelData, auto P::*channel)</td></tr>
-<tr class="memdesc:afa611e565a510988372aeb5ba3de37b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a single channel to the given image data.  <br /></td></tr>
-<tr class="separator:afa611e565a510988372aeb5ba3de37b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0840bd91d679741ac226374bfa4c8878" name="a0840bd91d679741ac226374bfa4c8878"></a>

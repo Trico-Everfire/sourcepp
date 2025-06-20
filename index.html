@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">SourcePP </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_docs_index"></a> </p><div> <img src="https://github.com/craftablescience/sourcepp/blob/main/branding/logo.png?raw=true" alt="The Source Pretty Parsers logo. A printer-esque device is scanning a page with hex codes and printing a picture of Cordon Freeman." align="left" width="101px" class="inline"/> <h1>Source Pretty Parsers</h1>
+<div class="textblock"><p><a class="anchor" id="md_docs_index"></a> </p><div> <img src="https://github.com/craftablescience/sourcepp/blob/main/branding/logo.png?raw=true" alt="The Source Pretty Parsers logo. A printer-esque device is scanning a page with hex codes and printing a picture of Cordon Freeman." align="left" width="130px" class="inline"/> <h1>Source Pretty Parsers</h1>
 </div><div> </div><div> <a href="https://github.com/craftablescience/sourcepp/actions" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/actions/workflow/status/craftablescience/sourcepp/build.yml?label=Build&amp;logo=github&amp;logoColor=%23FFFFFF" alt="Build Status" class="inline"/></a> <a href="https://github.com/craftablescience/sourcepp/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/license/craftablescience/sourcepp?label=License&amp;logo=libreofficewriter&amp;logoColor=%23FFFFFF" alt="License" class="inline"/></a> <a href="https://discord.gg/ASgHFkX" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/discord/678074864346857482?label=Discord&amp;logo=Discord&amp;logoColor=%23FFFFFF" alt="Discord" class="inline"/></a> <a href="https://ko-fi.com/craftablescience" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/donate-006dae?label=Ko-fi&amp;logo=ko-fi" alt="Ko-Fi" class="inline"/></a> </div><p>Several modern C++20 libraries for sanely parsing Valve formats, rolled into one big repository.</p>
 <h2><a class="anchor" id="autotoc_md0"></a>
 Included Libraries</h2>
@@ -350,11 +350,11 @@ Included Libraries</h2>
     <td align="center">✅</td>
   </tr>
   <tr>
-    <td rowspan="16"><code>vtfpp</code></td>
+    <td rowspan="18"><code>vtfpp</code></td>
     <td><a href="https://wiki.mozilla.org/APNG_Specification">APNG</a></td>
     <td align="center">✅</td>
     <td align="center">❌</td>
-    <td rowspan="16" align="center">C<br>Python</td>
+    <td rowspan="18" align="center">C<br>Python</td>
   </tr>
   <tr>
     <td><a href="https://en.wikipedia.org/wiki/BMP_file_format">BMP</a></td>
@@ -407,6 +407,11 @@ Included Libraries</h2>
     <td align="center">❌</td>
   </tr>
   <tr>
+    <td><a href="https://qoiformat.org">QOI</a></td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
     <td><a href="https://developer.valvesoftware.com/wiki/Animated_Particles">SHT</a> v0-1</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
@@ -437,6 +442,11 @@ Included Libraries</h2>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
+  <tr>
+    <td><a href="https://developers.google.com/speed/webp">WebP</a></td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
 </table>
 </p>
 <p>(*) These libraries are incomplete and still in development. Their interfaces are unstable and will likely change in the future. Libraries not starred should be considered stable, and their existing interfaces will not change much if at all. Note that wrappers only exist for stable libraries.</p>
@@ -456,6 +466,7 @@ Special Thanks</h2>
 <li><code>vpkpp</code>'s ORE parser is based on <a href="https://github.com/erysdren/narbacular-drop-tools">reverse-engineering work</a> by <a href="https://github.com/erysdren">@erysdren</a>.</li>
 <li><code>vpkpp</code>'s VPP parser was contributed by <a href="https://github.com/erysdren">@erysdren</a>.</li>
 <li><code>vpkpp</code>'s WAD3 parser/writer was contributed by <a href="https://github.com/ozxybox">@ozxybox</a>.</li>
+<li><code>vtfpp</code>'s NICE/Lanczos-3 resize filter support was contributed by <a href="https://github.com/koerismo">@koerismo</a>.</li>
 <li><code>vtfpp</code>'s SHT parser/writer was contributed by <a href="https://github.com/Trico-Everfire">@Trico Everfire</a>.</li>
 <li><code>vtfpp</code>'s VTF write support is loosely based on work by <a href="https://github.com/Trico-Everfire">@Trico Everfire</a>.</li>
 <li><code>vtfpp</code>'s HDRI to cubemap conversion code is modified from the <a href="https://github.com/ivarout/HdriToCubemap">HdriToCubemap</a> library by <a href="https://github.com/ivarout">@ivarout</a>.</li>
