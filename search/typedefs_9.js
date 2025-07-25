@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['type_0',['type',['../d1/de3/structsourcepp_1_1detail_1_1member__type__helper_3_01T_01C_1_1_5_01_4.html#aac726fdb47e398e374f43df1443a7240',1,'sourcepp::detail::member_type_helper&lt; T C::* &gt;']]]
+  ['quat_0',['Quat',['../d0/d54/namespacesourcepp_1_1math.html#a3c1646b9032a280749abf282f9dcf922',1,'sourcepp::math']]],
+  ['quaternion_1',['Quaternion',['../d7/d45/namespacedmxpp_1_1Value.html#a49ae5bbbb80e170d8da45e97618225d6',1,'dmxpp::Value']]]
 ];
