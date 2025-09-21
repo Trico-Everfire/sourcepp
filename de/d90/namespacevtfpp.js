@@ -38,8 +38,8 @@ var namespacevtfpp =
       [ "convertFileToImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a0e35b062eaaf17c3235b7fb03b05e9bf", null ],
       [ "convertHDRIToCubeMap", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a30fb0fa055a416e7f1642b99b04a090a", null ],
       [ "convertImageDataToFile", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a1bace17a2f4640e7f8b3de9655269a8e", null ],
-      [ "convertImageDataToFormat", "d5/d61/namespacevtfpp_1_1ImageConversion.html#af45f71e1645bd14fbcfcd48531de0303", null ],
-      [ "convertSeveralImageDataToFormat", "d5/d61/namespacevtfpp_1_1ImageConversion.html#aea795449a42d2076a8bb795d37faaec9", null ],
+      [ "convertImageDataToFormat", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a3fa45347401e8a9f6c2ee677d48192c9", null ],
+      [ "convertSeveralImageDataToFormat", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a47dd968fdac21e99c2982ef7e1946de9", null ],
       [ "cropImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac7cd00a5275611b373c7b7651d0d5a39", null ],
       [ "extractChannelFromImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#aad3b3ca83929b12ec4abad257d5f1648", null ],
       [ "gammaCorrectImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a53a8e1cf34ccf960a200739a6a93c3e0", null ],
@@ -48,10 +48,11 @@ var namespacevtfpp =
       [ "invertGreenChannelForImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#aeec89cbbd5eba9056520d45bd555a252", null ],
       [ "resizeImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#afcbc2ecd898c6e46a52535fa62494c8d", null ],
       [ "resizeImageDataStrict", "d5/d61/namespacevtfpp_1_1ImageConversion.html#aec2b00461a0a8b11227ed921a1996dcf", null ],
-      [ "setResizedDims", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a2c8bc6e0d781ad7eb30294063a7da865", null ]
+      [ "setResizedDims", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a2c8bc6e0d781ad7eb30294063a7da865", null ],
+      [ "DEFAULT_COMPRESSED_QUALITY", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a45a8c4b668815ac8b0de7f7439a643db", null ]
     ] ],
     [ "ImageDimensions", "d6/d38/namespacevtfpp_1_1ImageDimensions.html", [
-      [ "getActualMipCountForDimsOnConsole", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#acc9f92f33851509e9b596a128a776e45", null ],
+      [ "getActualMipCountForDimsOnConsole", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a8b3926c122cedfc630ff05a4b68a43f2", null ],
       [ "getMipDim", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a7e32bf316fe267f7c83158cddd55c66b", null ],
       [ "getRecommendedMipCountForDims", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#acef2e68e33078497b3669fa1c07bb954", null ]
     ] ],
@@ -67,9 +68,11 @@ var namespacevtfpp =
       [ "decompressedBlue", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a3c11bce4477d5ba879b5a1d33e1cfa3b", null ],
       [ "decompressedGreen", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a0e5479b1e7fdbd64a1aae6af0a05f91d", null ],
       [ "decompressedRed", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a99c40f659044beb0e3c43568423a25dd", null ],
-      [ "getDataLength", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a708dc57f5c69e5ed309f780548df41b6", null ],
-      [ "getDataLength", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#ac43c99ecb4fb3b6970bc87890d98c8ad", null ],
-      [ "getDataPosition", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#aa00fc65d120a4ed1710f96e3965aaff1", null ],
+      [ "getDataLength", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a05f26b1e13af380bf281363d0c8ed1af", null ],
+      [ "getDataLength", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a5996d434658b78e11db8ee4042a24431", null ],
+      [ "getDataLengthXBOX", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a98a282f92eab939281fe3c218a8cc689", null ],
+      [ "getDataPosition", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a08976ce56c9bad222d9881e15577c56a", null ],
+      [ "getDataPositionXbox", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#ad9aa2936f9d739916a4a86b604e88e91", null ],
       [ "green", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a2dee38efbf446a2847bfef142dcded1b", null ],
       [ "large", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a2abec7b9aa23378e8d4f975269697270", null ],
       [ "opaque", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#af165209ed03701f0a935efcd5f3cd9fd", null ],
@@ -77,6 +80,9 @@ var namespacevtfpp =
       [ "transparent", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a78ae08639944704fc3005980477e7e56", null ]
     ] ],
     [ "ImagePixel", "dd/d73/namespacevtfpp_1_1ImagePixel.html", "dd/d73/namespacevtfpp_1_1ImagePixel" ],
+    [ "ImageQuantize", "d5/d69/namespacevtfpp_1_1ImageQuantize.html", [
+      [ "convertP8ImageDataToBGRA8888", "d5/d69/namespacevtfpp_1_1ImageQuantize.html#a21b7c236b53fca32e7d8453f7d61ed2e", null ]
+    ] ],
     [ "HOT", "da/d9a/classvtfpp_1_1HOT.html", "da/d9a/classvtfpp_1_1HOT" ],
     [ "PPL", "df/d32/classvtfpp_1_1PPL.html", "df/d32/classvtfpp_1_1PPL" ],
     [ "Resource", "d3/d80/structvtfpp_1_1Resource.html", "d3/d80/structvtfpp_1_1Resource" ],
@@ -147,5 +153,6 @@ var namespacevtfpp =
     [ "TTH_SIGNATURE", "de/d90/namespacevtfpp.html#ac8b795eaf266d5ec86358e15213c97da", null ],
     [ "VTF3_SIGNATURE", "de/d90/namespacevtfpp.html#a62b9c897925746f89abe8a1222a0317b", null ],
     [ "VTF_SIGNATURE", "de/d90/namespacevtfpp.html#a1e1c52fc9b46a7b77835b125b9372575", null ],
-    [ "VTFX_SIGNATURE", "de/d90/namespacevtfpp.html#a534130e52cb10a651b616db23c5428e0", null ]
+    [ "VTFX_SIGNATURE", "de/d90/namespacevtfpp.html#a534130e52cb10a651b616db23c5428e0", null ],
+    [ "XTF_SIGNATURE", "de/d90/namespacevtfpp.html#a3c39e4860af4bb4fee82a1c82a92075e", null ]
 ];
