@@ -7,10 +7,7 @@ var namespacevtfpp =
         [ "JPG", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a92769fe7c40229f4301d6125e0a9e928", null ],
         [ "BMP", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409aa5d5ca1447586e23dc011f8c0cc0a6db", null ],
         [ "TGA", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a64efd9bcf7b83f22fe9796967255e103", null ],
-        [ "WEBP", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409ab8dbf614b2c3a603c8c8c723a3f6eb7a", null ],
-        [ "QOI", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a66afb022805d2723402536fa3f58f36c", null ],
-        [ "HDR", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a6cad826248cd3f4e93da71e7b49928e3", null ],
-        [ "EXR", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409aeb63de47b8691d315fefa05620191725", null ]
+        [ "HDR", "d5/d61/namespacevtfpp_1_1ImageConversion.html#ac86b05f9f4f7148b3a4ea53c6bfd0409a6cad826248cd3f4e93da71e7b49928e3", null ]
       ] ],
       [ "ResizeEdge", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a5958476a157c26336cb52c3055cffb53", [
         [ "CLAMP", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a5958476a157c26336cb52c3055cffb53aecf301fe86e23bb2bf5155bbef3b1345", null ],
@@ -46,15 +43,17 @@ var namespacevtfpp =
       [ "getDefaultFileFormatForImageFormat", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a6bbe3db800f111c09ce579e0b9d4a37e", null ],
       [ "getResizedDim", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a440840aa87de2dc367add665f674b365", null ],
       [ "invertGreenChannelForImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#aeec89cbbd5eba9056520d45bd555a252", null ],
+      [ "padImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#aa49805216125fba791d6e23c8af0335d", null ],
       [ "resizeImageData", "d5/d61/namespacevtfpp_1_1ImageConversion.html#afcbc2ecd898c6e46a52535fa62494c8d", null ],
       [ "resizeImageDataStrict", "d5/d61/namespacevtfpp_1_1ImageConversion.html#aec2b00461a0a8b11227ed921a1996dcf", null ],
       [ "setResizedDims", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a2c8bc6e0d781ad7eb30294063a7da865", null ],
       [ "DEFAULT_COMPRESSED_QUALITY", "d5/d61/namespacevtfpp_1_1ImageConversion.html#a45a8c4b668815ac8b0de7f7439a643db", null ]
     ] ],
     [ "ImageDimensions", "d6/d38/namespacevtfpp_1_1ImageDimensions.html", [
-      [ "getActualMipCountForDimsOnConsole", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a8b3926c122cedfc630ff05a4b68a43f2", null ],
-      [ "getMipDim", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a7e32bf316fe267f7c83158cddd55c66b", null ],
-      [ "getRecommendedMipCountForDims", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#acef2e68e33078497b3669fa1c07bb954", null ]
+      [ "getMaximumMipCount", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a92001e554a275d536fc98eb427311580", null ],
+      [ "getMipDim", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a4219a9564f9f1e1ed2a464a1d3b8e0a7", null ],
+      [ "getMipDims", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a423da5c814b9b488e5daa064d593f6bb", null ],
+      [ "getMipDims", "d6/d38/namespacevtfpp_1_1ImageDimensions.html#a00d940fd544fc9cce07690a9fb2cc189", null ]
     ] ],
     [ "ImageFormatDetails", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html", [
       [ "alpha", "db/d69/namespacevtfpp_1_1ImageFormatDetails.html#a1758f1115310feea3dbc7c1738c994a9", null ],
